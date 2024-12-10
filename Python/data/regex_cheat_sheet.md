@@ -1,7 +1,7 @@
 [⬅ Retour à Python](../README.md)
 
 
-### **Regex - Expressions Régulières**
+## **Regex - Expressions Régulières**
 
 #### Introduction aux Expressions Régulières
 
