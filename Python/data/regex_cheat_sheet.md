@@ -115,8 +115,6 @@ Les **métacaractères** et **séquences** permettent de construire des motifs c
 - Les **lookaheads** et **lookbehinds** sont particulièrement utiles pour effectuer des validations complexes sans capturer les motifs eux-mêmes.
 - Les **classes POSIX** (par ex. `[[:alpha:]]`) sont compatibles dans certains outils et langages (comme `grep` ou Perl), mais nécessitent parfois une configuration spécifique dans Python.
 
-Cela te donne plus de flexibilité pour explorer les subtilités des regex ! Si tu veux approfondir un point spécifique, n’hésite pas ! 😉
-
 ---
 
 ## Combinaisons Avancées
