@@ -69,10 +69,6 @@ Le module **`re`** de Python est dédié aux regex. Il permet de chercher, divis
 
 ---
 
-Voici une version enrichie du tableau des métacaractères et des séquences utilisées en regex :
-
----
-
 ## Syntaxe des Regex : Métacaractères et Séquences
 
 Les **métacaractères** et **séquences** permettent de construire des motifs complexes pour la recherche et la manipulation de chaînes de caractères. Voici une liste enrichie :
