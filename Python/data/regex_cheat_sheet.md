@@ -1,13 +1,13 @@
 [⬅ Retour à Python](../README.md)
 
 
-## **Regex - Expressions Régulières**
+# **Regex - Expressions Régulières**
 
-#### Introduction aux Expressions Régulières
+## Introduction aux Expressions Régulières
 
 Une **expression régulière** (regex) est un modèle utilisé pour rechercher, extraire ou manipuler des chaînes de caractères. Elle est particulièrement efficace pour traiter des données textuelles complexes et automatiser certaines tâches. Bien que le terme français exact soit **expression rationnelle**, "expression régulière" reste couramment utilisé.
 
-#### Pourquoi utiliser les regex ?  
+## Pourquoi utiliser les regex ?  
 Imaginons que tu doives extraire toutes les dates d'un journal de bord comme :  
 `Visite de contrôle : 12-04-2023, prochaine visite : 18-05-2023.`  
 Avec les regex, cela devient facile et rapide, même si tu as des milliers d'enregistrements.  
@@ -24,11 +24,11 @@ print(dates)  # ['12-04-2023', '18-05-2023']
 
 ---
 
-### Le Module `re` en Python
+## Le Module `re` en Python
 
 Le module **`re`** de Python est dédié aux regex. Il permet de chercher, diviser ou modifier des chaînes de caractères avec précision.
 
-#### Fonctions principales :
+### Fonctions principales :
 
 1. **`re.search(motif, texte)`**  
    Vérifie la présence d'un motif dans le texte et renvoie un objet `Match` ou `None`.
@@ -73,7 +73,7 @@ Voici une version enrichie du tableau des métacaractères et des séquences uti
 
 ---
 
-### Syntaxe des Regex : Métacaractères et Séquences
+## Syntaxe des Regex : Métacaractères et Séquences
 
 Les **métacaractères** et **séquences** permettent de construire des motifs complexes pour la recherche et la manipulation de chaînes de caractères. Voici une liste enrichie :
 
@@ -115,7 +115,7 @@ Les **métacaractères** et **séquences** permettent de construire des motifs c
 | `[[:alnum:]]`            | Alphanumérique (lettres et chiffres) | `[[:alnum:]]+` trouve `abc123` |
 | `[[:xdigit:]]`           | Hexadécimal (0-9, a-f, A-F) | `[[:xdigit:]]+` trouve `3F` |
 
-#### Notes :
+### Notes :
 - Les **lookaheads** et **lookbehinds** sont particulièrement utiles pour effectuer des validations complexes sans capturer les motifs eux-mêmes.
 - Les **classes POSIX** (par ex. `[[:alpha:]]`) sont compatibles dans certains outils et langages (comme `grep` ou Perl), mais nécessitent parfois une configuration spécifique dans Python.
 
@@ -123,7 +123,7 @@ Cela te donne plus de flexibilité pour explorer les subtilités des regex ! Si 
 
 ---
 
-### Combinaisons Avancées
+## Combinaisons Avancées
 
 1. **Groupes capturants avec `()`**  
    Utilisés pour capturer une sous-partie du motif.
@@ -145,7 +145,7 @@ Cela te donne plus de flexibilité pour explorer les subtilités des regex ! Si 
 
 ---
 
-### Ressources Utiles
+## Ressources Utiles
 
 - [Regex101](https://regex101.com/) : Test interactif des regex.  
 - [RegexOne](https://regexone.com/) : Tutoriels pas à pas.  
@@ -153,6 +153,6 @@ Cela te donne plus de flexibilité pour explorer les subtilités des regex ! Si 
 
 ---
 
-### Conclusion
+## Conclusion
 
 Les expressions régulières sont des outils redoutables pour la manipulation de texte. Bien qu'elles nécessitent un peu de pratique, elles permettent de gagner un temps précieux dans le traitement des données.  
