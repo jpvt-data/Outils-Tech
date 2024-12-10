@@ -11,23 +11,23 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 ## 📚 Contenu
 
 ### 1. Bases de Python
-- [Variables et types de données](./variables_and_data_types.md) // Work in progress
-- [Boucles et conditions](./loops_and_conditions.md) // Work in progress
+- [Variables et types de données](./data/variables_and_data_types.md)
+- [Boucles et conditions](./data/loops_and_conditions.md)
 
 ### 2. Manipulation de données
-- [Introduction à Pandas](./pandas_cheat_sheet.md)
-- [Utilisation de NumPy](./numpy_cheat_sheet.md)
+- [Introduction à Pandas](./data/pandas_cheat_sheet.md)
+- [Utilisation de NumPy](./data/numpy_cheat_sheet.md)
 
 ### 3. Traitement des chaînes de caractères
-- [Expressions régulières](./regex_cheat_sheet.md)
+- [Expressions régulières](./data/regex_cheat_sheet.md)
 
 ### 4. Visualisation des données
-- [Graphiques avec Matplotlib](./matplotlib_cheat_sheet.md)
-- [Création de visualisations avec Seaborn](./seaborn_cheat_sheet.md)
+- [Graphiques avec Matplotlib](./data/matplotlib_cheat_sheet.md)
+- [Création de visualisations avec Seaborn](./data/seaborn_cheat_sheet.md)
 
 ### 5. Divers
-- [Gestion des erreurs et exceptions](./error_handling.md)
-- [Compréhensions de listes](./list_comprehensions.md)
+- [Gestion des erreurs et exceptions](./data/error_handling.md)
+- [Compréhensions de listes](./data/list_comprehensions.md)
 
 ## 🔗 Comment utiliser ce répertoire ?
 1. Cliquez sur les liens ci-dessus pour accéder directement à une fiche technique.
