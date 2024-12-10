@@ -1,5 +1,5 @@
-🚧 **Work in Progress** 🚧  
-Ce dépôt est en cours de construction et sera régulièrement enrichi avec de nouvelles ressources et améliorations. Merci pour votre patience !
+🚧 **Work in Progress** 🚧
+Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 
 ---
 
