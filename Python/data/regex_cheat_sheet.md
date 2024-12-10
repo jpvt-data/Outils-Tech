@@ -1,4 +1,4 @@
-### **Python - Regex (partie 1) Expressions Régulières**
+### **Regex - Expressions Régulières**
 
 #### Introduction aux Expressions Régulières
 
