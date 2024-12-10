@@ -33,7 +33,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 
 ## 🔗 Comment utiliser ce répertoire ?
 1. Cliquez sur les liens ci-dessus pour accéder directement à une fiche technique.
-2. Si vous avez des suggestions ou des ressources à ajouter, proposez une pull request dans le dépôt principal **TECHNOTES**.
+2. Si vous avez des suggestions ou des ressources à ajouter, proposez une pull request dans le dépôt principal **Tech-Notes**.
 
 ### 🌟 À propos
 Ces fiches ont été conçues pour faciliter l'apprentissage et la pratique de Python dans mes projets de Data Analyse et Dataviz. Elles sont régulièrement mises à jour en fonction de mes besoins et découvertes.  
