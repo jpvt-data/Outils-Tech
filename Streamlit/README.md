@@ -1,6 +1,6 @@
 [⬅ Retour à Outils-Tech](../README.md)
 
-# Streamlit - Fiches Techniques
+# Streamlit
 
 Bienvenue dans le dossier dédié à **Streamlit**, un framework Python puissant pour la création d'applications web interactives de visualisation de données.
 
