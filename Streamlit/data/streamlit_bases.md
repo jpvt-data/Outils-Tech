@@ -1,6 +1,6 @@
 [⬅ Retour à Streamlit](../README.md)
 
-# Streamlit - Les Bases
+# **Streamlit - Les Bases**
 
 **Streamlit** est une bibliothèque open-source qui permet de transformer des scripts Python en applications web interactives, sans avoir besoin de connaissances poussées en développement web. Elle est idéale pour les analystes de données ou les développeurs souhaitant partager leurs analyses de manière visuelle et intuitive. Ce guide couvre les bases essentielles pour débuter avec Streamlit.
 

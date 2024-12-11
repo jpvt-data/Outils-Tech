@@ -1,6 +1,6 @@
 [⬅ Retour à Streamlit](../README.md)
 
-# Streamlit - Fonctionnalités avancées
+# **Streamlit - Fonctionnalités avancées**
 
 Streamlit permet de développer des applications web interactives pour la visualisation et l'analyse de données. Dans un contexte professionnel, il peut être nécessaire d'ajouter des fonctionnalités avancées telles que la création de menus de navigation, l'intégration d'une page de connexion sécurisée, et le déploiement en ligne de l'application. Cette fiche explique comment mettre en place ces éléments de manière détaillée et pédagogique.
 
