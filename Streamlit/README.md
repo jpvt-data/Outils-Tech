@@ -1,3 +1,5 @@
+[⬅ Retour à Outils-Tech](../README.md)
+
 # Streamlit - Fiches Techniques
 
 Bienvenue dans le dossier dédié à **Streamlit**, un framework Python puissant pour la création d'applications web interactives de visualisation de données.
@@ -16,11 +18,14 @@ Streamlit permet de créer rapidement des applications web pour visualiser des d
 
 Voici les fiches disponibles dans ce dossier :
 
-### 1. **Streamlit - Bases (à venir)**
+### 1. **Streamlit - Bases**
 Cette fiche présente les bases de Streamlit : installation, structure d'une application, composants fondamentaux (widgets, affichage de données, etc.), et un premier exemple d'application simple.
 
-### 2. **[Streamlit - Fonctions Avancées](./streamlit_fonctions_avancees.md)**
-Explore les fonctionnalités avancées de Streamlit, telles que la gestion des états, l'interactivité avec les données, l'intégration de visualisations complexes, et l'optimisation de l’application pour un meilleur rendu.
+### 2. **[Streamlit - Manipuler des graphiques](./data/streamlit_manipuler_graphiques.md)**
+Utiliser Streamlit pour créer des graphiques interactifs avec Matplotlib, Seaborn et Plotly, ainsi que des fonctions natives pour afficher des visualisations simples telles que des graphiques linéaires et des cartes géographiques. Idéal pour enrichir les applications avec des données visuelles dynamiques.
+
+### 3. **[Streamlit - Fonctions Avancées](./data/streamlit_fonctions_avancees.md)**
+Explorer les fonctionnalités avancées de Streamlit, telles que la gestion des états, l'interactivité avec les données, l'intégration de visualisations complexes, et l'optimisation de l’application pour un meilleur rendu.
 
 ---
 
