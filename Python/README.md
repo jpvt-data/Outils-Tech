@@ -10,7 +10,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 Ce répertoire contient toutes mes fiches techniques liées à Python, organisées par thématiques clés.  
 Ces fiches sont des références pratiques sur les bibliothèques, les fonctionnalités, et les astuces essentielles pour le travail en Data Analytics.
 
-## 📚 Contenuzzz
+## 📚 Contenu
 
 ### 1. Bases de Python
 - [Variables et types de données](./data/variables_and_data_types.md)
