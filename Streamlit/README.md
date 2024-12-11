@@ -18,7 +18,7 @@ Streamlit permet de créer rapidement des applications web pour visualiser des d
 
 Voici les fiches disponibles dans ce dossier :
 
-### 1. **[Streamlit - Bases](./data/streamlit_bases.md.md)**
+### 1. **[Streamlit - Bases](./data/streamlit_bases.md)**
 Cette fiche présente les bases de Streamlit : installation, structure d'une application, composants fondamentaux (widgets, affichage de données, etc.), et un premier exemple d'application simple.
 
 ### 2. **[Streamlit - Manipuler des graphiques](./data/streamlit_manipuler_graphiques.md)**
