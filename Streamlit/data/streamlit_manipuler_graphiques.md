@@ -199,3 +199,5 @@ Streamlit offre une manière simple et rapide de manipuler et de visualiser des 
 Grâce à ses intégrations avec des bibliothèques populaires comme Matplotlib, Seaborn et Plotly, il permet de créer des graphiques variés et dynamiques adaptés à divers besoins d’analyse de données. 
 
 Ces fonctionnalités, combinées à sa facilité d’utilisation, en font un excellent outil pour les Data Analysts qui cherchent à présenter leurs résultats de manière claire et engageante.
+
+[⬅ Retour à Streamlit](../README.md)

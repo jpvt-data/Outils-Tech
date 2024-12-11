@@ -139,3 +139,5 @@ Accédez aux paramètres de l'application et activez l'option **"This app is pub
 
 En suivant ces étapes, vous pouvez créer des applications Streamlit interactives, sécurisées et accessibles en ligne. Ces fonctionnalités répondent aux besoins des utilisateurs et renforcent l'efficacité des solutions proposées.
 
+
+[⬅ Retour à Streamlit](../README.md)

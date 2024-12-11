@@ -21,7 +21,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Utilisation de NumPy](./data/numpy_cheat_sheet.md)
 
 ### 3. Traitement des chaînes de caractères
-- [Expressions régulières](./data/regex_cheat_sheet.md)
+- [Regex - Expressions régulières](./data/regex_expressions_regulieres.md)
 
 ### 4. Visualisation des données
 - [Graphiques avec Matplotlib](./data/matplotlib_cheat_sheet.md)
@@ -36,4 +36,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 2. Si vous avez des suggestions ou des ressources à ajouter, proposez une pull request dans le dépôt principal **Tech-Notes**.
 
 ### 🌟 À propos
-Ces fiches ont été conçues pour faciliter l'apprentissage et la pratique de Python dans mes projets de Data Analyse et Dataviz. Elles sont régulièrement mises à jour en fonction de mes besoins et découvertes.  
+Ces fiches ont été conçues pour faciliter l'apprentissage et la pratique de Python dans mes projets de Data Analyse et Dataviz. Elles sont régulièrement mises à jour en fonction de mes besoins et découvertes.
+
+
+[⬅ Retour à Outils-Tech](../README.md)

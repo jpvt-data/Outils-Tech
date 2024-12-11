@@ -35,3 +35,6 @@ Pour installer Streamlit, il suffit d'exécuter la commande suivante dans votre 
 
 ```bash
 pip install streamlit
+
+
+[⬅ Retour à Outils-Tech](../README.md)
