@@ -69,10 +69,6 @@ Le module **`re`** de Python est dédié aux regex. Il permet de chercher, divis
 
 ---
 
-Voici une version enrichie du tableau des métacaractères et des séquences utilisées en regex :
-
----
-
 ## Syntaxe des Regex : Métacaractères et Séquences
 
 Les **métacaractères** et **séquences** permettent de construire des motifs complexes pour la recherche et la manipulation de chaînes de caractères. Voici une liste enrichie :
@@ -118,8 +114,6 @@ Les **métacaractères** et **séquences** permettent de construire des motifs c
 ### Notes :
 - Les **lookaheads** et **lookbehinds** sont particulièrement utiles pour effectuer des validations complexes sans capturer les motifs eux-mêmes.
 - Les **classes POSIX** (par ex. `[[:alpha:]]`) sont compatibles dans certains outils et langages (comme `grep` ou Perl), mais nécessitent parfois une configuration spécifique dans Python.
-
-Cela te donne plus de flexibilité pour explorer les subtilités des regex ! Si tu veux approfondir un point spécifique, n’hésite pas ! 😉
 
 ---
 
