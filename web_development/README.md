@@ -3,7 +3,7 @@
 # Développement Web 🌍
 
 Bienvenue dans la section dédiée au **Développement Web** !  
-Cette section présente des ressources pour apprendre les bases et explorer les fondamentaux du développement web, avec un focus sur **HTML** et **CSS**.
+Cette section présente des ressources pour apprendre les bases et explorer les fondamentaux du développement web.
 
 ## 📚 Fiches disponibles
 
