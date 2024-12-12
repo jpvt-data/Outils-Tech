@@ -1,147 +1,141 @@
 [⬅ Retour à Machine Learning](../README.md)
 
-# Machine Learning - K-Nearest Neighbours - Classification
+# Machine Learning - K-Nearest Neighbours (KNN) - Classification
 
 ## Introduction à l'algorithme K-Nearest Neighbours (KNN)
 
-L'algorithme K-Nearest Neighbours (KNN) est une méthode de machine learning supervisé utilisée principalement pour des problèmes de classification, bien qu'il puisse aussi être appliqué à la régression. Il repose sur un principe simple : pour classer une donnée, on regarde les "k" voisins les plus proches de cette donnée dans l'espace des caractéristiques, et la classe la plus fréquente parmi ces voisins est attribuée à la donnée à classer. On peut donc résumer cette méthode par la phrase : **"Dis-moi qui est ton voisin et je te dirai qui tu es"**.
+L'algorithme K-Nearest Neighbours (KNN) est une méthode de machine learning supervisé largement utilisée pour des problèmes de classification. KNN est basé sur un principe simple : lorsqu'un point de données doit être classé, il regarde les *k* voisins les plus proches dans l'espace des caractéristiques, et la classe la plus fréquente parmi ces voisins est attribuée. En résumé, **"Dis-moi qui sont tes voisins et je te dirai qui tu es"**.
+
+---
 
 ## Objectifs
 
-1. **Comprendre l'algorithme KNN et son utilisation pour la classification.**
+1. **Comprendre le principe et l'utilisation de KNN pour la classification.**
 2. **Apprendre à appliquer KNN avec la bibliothèque scikit-learn.**
-3. **Explorer les métriques liées aux classifications, comme la matrice de confusion et les scores de précision.**
+3. **Explorer les métriques de performance comme la matrice de confusion et les scores de précision.**
+
+---
 
 ## KNN : Principe de Fonctionnement
 
 ### Apprentissage Supervisé vs Non Supervisé
 
-Avant de plonger dans KNN, il est utile de comprendre la différence entre **l'apprentissage supervisé** et **l'apprentissage non supervisé** :
-- **Apprentissage supervisé** : Le modèle apprend à partir d'un ensemble de données étiquetées (avec une variable cible y).
-- **Apprentissage non supervisé** : Le modèle apprend à partir de données non étiquetées, sans variable cible.
+- **Apprentissage supervisé** : Le modèle apprend à partir de données étiquetées avec une variable cible (y).
+- **Apprentissage non supervisé** : Le modèle apprend à partir de données sans étiquettes de classe.
 
-Dans le cas de KNN, il s'agit d'un **apprentissage supervisé** où l'objectif est de prédire une classe en fonction des caractéristiques des voisins les plus proches.
+Dans le cas de KNN, c'est un **apprentissage supervisé** où l'objectif est de prédire une classe en fonction des voisins proches.
 
 ### Comment ça marche ?
 
-KNN est basé sur le concept de proximité des données dans un espace multidimensionnel. Le principal concept est de calculer la distance entre un point à classer et les autres points du jeu de données.
+KNN repose sur la proximité des données dans un espace multidimensionnel. Pour classer un point, on mesure la distance entre ce point et les autres dans l'ensemble de données.
 
-- **k** : Représente le nombre de voisins les plus proches utilisés pour la classification.
-- **Distance** : La méthode la plus courante pour mesurer cette proximité est la **distance euclidienne**, mais d'autres distances comme la **distance de Manhattan** peuvent être utilisées selon le cas d'usage.
+- **k** : Nombre de voisins à considérer pour la classification.
+- **Distance** : Méthode la plus courante : **distance euclidienne**, mais des alternatives comme la **distance de Manhattan** sont aussi possibles.
 
 ### Types de Problèmes
-- **Classification** : Le modèle prédit une catégorie (exemple : chat ou chien).
+
+- **Classification** : Le modèle prédit une catégorie (ex : chat ou chien).
 - **Régression** : Le modèle prédit une valeur numérique.
 
-Ici, nous nous concentrons sur l'application de KNN à un problème de **classification**.
+Nous nous concentrons ici sur **la classification**.
+
+---
 
 ## Paramètres et Fonctionnement avec scikit-learn
 
 ### Utilisation avec scikit-learn
 
-Scikit-learn fournit une classe `KNeighborsClassifier` qui permet d'implémenter facilement l'algorithme KNN pour la classification.
+Scikit-learn facilite l'implémentation de KNN avec la classe `KNeighborsClassifier`.
 
 Exemple d'utilisation en Python :
 
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 
-# Création du modèle avec un nombre de voisins k=5
+# Création du modèle avec k=5 voisins
 modelKNN = KNeighborsClassifier(n_neighbors=5)
 
-# Entraînement du modèle avec des données d'apprentissage
+# Entraînement du modèle avec les données d'entraînement
 modelKNN.fit(X_train, y_train)
 
-# Prédiction sur les données test
+# Prédiction sur les données de test
 y_pred = modelKNN.predict(X_test)
 ```
 
 ### Paramètres Importants
 
-- **n_neighbors** : Détermine le nombre de voisins à considérer. Par défaut, il est fixé à 5.
+- **n_neighbors** : Nombre de voisins à considérer. Par défaut, c'est 5.
   - Exemple : `modelKNN = KNeighborsClassifier(n_neighbors=7)`
-
-- **weights** : Par défaut, chaque voisin a un poids égal. Si l'on veut que les voisins plus proches aient plus d'influence, on peut utiliser l'option `weights="distance"`, qui attribue un poids inversément proportionnel à la distance.
+- **weights** : Si on souhaite que les voisins plus proches aient plus d'influence, on peut utiliser `weights="distance"`.
   - Exemple : `modelKNN = KNeighborsClassifier(weights="distance")`
-
-### La distance
-
-La **distance euclidienne** est la méthode la plus courante pour déterminer la proximité entre les points. Elle est calculée comme suit pour deux points \( p_1 \) et \( p_2 \) dans un espace \( d \)-dimensionnel :
-
-\[
-d(p_1, p_2) = \sqrt{\sum_{i=1}^{d}(p_{1i} - p_{2i})^2}
-\]
 
 ### Métriques de Distance Alternatives
 
-Bien que la distance euclidienne soit la plus utilisée, il existe d'autres métriques comme :
-- **Distance de Manhattan** : Mesure la distance comme la somme des différences absolues des coordonnées.
+- **Distance de Manhattan** : Somme des différences absolues des coordonnées.
 - **Distance de Minkowski** : Généralisation de la distance euclidienne et de Manhattan.
 
-Avec scikit-learn, la métrique peut être spécifiée via le paramètre `metric` et `p`.
+Avec scikit-learn, ces métriques peuvent être spécifiées via le paramètre `metric` et `p`.
+
+---
 
 ## Préparation des Données
 
 ### Traitement des Variables Catégorielles
 
-KNN nécessite des données numériques pour calculer les distances. Si vous avez des variables catégorielles, vous devez les transformer :
+KNN nécessite des données numériques pour mesurer les distances. Pour transformer des variables catégorielles, deux approches courantes sont :
 
-1. **Factorisation** : Transformation des catégories en valeurs numériques ordonnées. Cependant, cela peut induire des erreurs car KNN pourrait percevoir des relations ordonnées là où il n'y en a pas.
-   
-   Exemple :
+1. **Factorisation** : Transformation des catégories en valeurs numériques ordonnées. Attention, cela peut induire des relations erronées.
    ```python
    df['animaux_nb'] = df['animaux'].factorize()[0]
    ```
 
-2. **Encodage One-Hot (Get Dummies)** : Cette méthode crée des colonnes binaires pour chaque catégorie, évitant ainsi les problèmes d'ordonnancement.
-   
-   Exemple :
+2. **Encodage One-Hot** : Création de colonnes binaires pour chaque catégorie, évitant les problèmes d'ordonnancement.
    ```python
    pd.get_dummies(df['animaux'])
    ```
 
-## Métriques de Classification
+---
 
-L'évaluation des performances d'un modèle de classification se fait souvent à l'aide de la **matrice de confusion**, qui permet de mesurer les prédictions du modèle et leur précision.
+## Métriques de Classification
 
 ### Matrice de Confusion
 
-Une matrice de confusion résume les prédictions effectuées par le modèle par rapport aux vraies valeurs. Pour un problème binaire (chat/chien), elle peut ressembler à ceci :
+La **matrice de confusion** est utilisée pour évaluer les performances du modèle. Pour un problème binaire (ex : chat/chien), elle peut ressembler à ceci :
 
 |                    | Prédiction Chat | Prédiction Chien |
 |--------------------|-----------------|------------------|
 | **Vrai Chat**      | 5               | 5                |
 | **Vrai Chien**     | 1               | 9                |
 
-Où :
-- **Vrai Positif (TP)** : Le modèle a correctement prédit un chat (5).
-- **Faux Négatif (FN)** : Le modèle a prédit un chien alors que c'était un chat (5).
-- **Faux Positif (FP)** : Le modèle a prédit un chat alors que c'était un chien (1).
-- **Vrai Négatif (TN)** : Le modèle a correctement prédit un chien (9).
+### Métriques de Performance
 
-### Métriques Calculées à partir de la Matrice de Confusion
+- **Accuracy** : Proportion de prédictions correctes.
+  \[
+  \text{Accuracy} = \frac{TP + TN}{\text{Total des prédictions}}
+  \]
+  
+- **Recall (Sensibilité)** : Proportion des vrais positifs parmi les éléments réellement positifs.
+  \[
+  \text{Recall} = \frac{TP}{TP + FN}
+  \]
 
-1. **Accuracy (Précision)** : Mesure la proportion de prédictions correctes.
-   \[
-   \text{Accuracy} = \frac{TP + TN}{\text{Total des prédictions}}
-   \]
+- **F1-Score** : Moyenne harmonique de la précision et du recall, utile quand les classes sont déséquilibrées.
+  
+- **Precision** : Proportion des vrais positifs parmi les prédictions positives.
+  \[
+  \text{Precision} = \frac{TP}{TP + FP}
+  \]
 
-2. **Recall (Sensibilité)** : Proportion de vrais positifs parmi les éléments réellement positifs.
-   \[
-   \text{Recall} = \frac{TP}{TP + FN}
-   \]
+---
 
-3. **F1-Score** : Moyenne harmonique de la précision et du recall. Il est utilisé quand il y a un déséquilibre dans les classes.
+## Exemple Pratique avec scikit-learn
 
-4. **Métrique de précision (Precision)** : Proportion de vrais positifs parmi les prédictions positives.
-   \[
-   \text{Precision} = \frac{TP}{TP + FP}
-   \]
-
-### Exemple d'implémentation de la Matrice de Confusion et des métriques avec scikit-learn
+Voici un exemple complet, avec calcul de la matrice de confusion et affichage des métriques de classification :
 
 ```python
-from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Matrice de confusion
 cm = confusion_matrix(y_test, y_pred)
@@ -149,12 +143,43 @@ cm = confusion_matrix(y_test, y_pred)
 # Précision (Accuracy)
 accuracy = accuracy_score(y_test, y_pred)
 
-print("Matrice de confusion :\n", cm)
+# Affichage de la matrice de confusion avec Seaborn
+plt.figure(figsize=(6,4))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=["Chat", "Chien"], yticklabels=["Chat", "Chien"])
+plt.title("Matrice de Confusion")
+plt.xlabel("Prédictions")
+plt.ylabel("Vraies Valeurs")
+plt.show()
+
+# Affichage des métriques
 print("Précision : ", accuracy)
+print("Rapport de classification : \n", classification_report(y_test, y_pred))
 ```
+
+### Graphiques de Visualisation des Distances
+
+Une visualisation utile dans un problème KNN est la distance entre les points. Voici un exemple de visualisation en 2D pour montrer comment KNN classe les points en fonction des voisins les plus proches :
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Exemple de points en 2D
+X = np.random.rand(10, 2)
+y = np.array([0, 1, 1, 0, 1, 0, 0, 1, 0, 1])
+
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap='coolwarm')
+plt.title('Visualisation des points avec classification KNN')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.show()
+```
+
+---
 
 ## Conclusion
 
-L'algorithme K-Nearest Neighbours est une méthode puissante et intuitive pour résoudre des problèmes de classification en machine learning. Il repose sur l'idée simple que les objets similaires sont souvent proches dans l'espace des caractéristiques. En utilisant scikit-learn, vous pouvez facilement appliquer KNN à vos données, ajuster les paramètres comme le nombre de voisins et la méthode de pondération, et évaluer les performances du modèle à l'aide de métriques adaptées comme la matrice de confusion, l'accuracy, le recall, et le F1-score.
+L'algorithme K-Nearest Neighbours est une méthode intuitive et puissante pour résoudre des problèmes de classification. Grâce à **scikit-learn**, son implémentation est simple, et il est facile d'ajuster des paramètres comme le nombre de voisins ou la méthode de pondération. La visualisation et l'évaluation de la performance à l'aide de la matrice de confusion et des métriques comme l'accuracy et le F1-score permettent de mesurer l'efficacité du modèle.
+
 
 [⬅ Retour à Machine Learning](../README.md)
