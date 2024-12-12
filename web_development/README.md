@@ -13,9 +13,5 @@ Cette section présente des ressources pour apprendre les bases et explorer les 
 
 Ces fiches visent à poser les bases du développement front-end pour ceux qui souhaitent apprendre à créer des pages web simples et bien structurées.
 
----
-
-Ce README introduit donc les concepts abordés dans le dossier **WebDevelopment** et facilite la navigation vers les différentes fiches.
-
 
 [⬅ Retour à Outils-Tech](../README.md)
