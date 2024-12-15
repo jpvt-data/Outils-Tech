@@ -10,7 +10,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 ## Outils et concepts couverts :
 - **[Python](./Python)** 🐍 : Fiches sur Pandas, NumPy, Regex, etc.
 - **SQL** 🗃️ : Requêtes de base, jointures, sous-requêtes, etc.
-- **[Machine Learning](./machine_learning)** 🤖 : Régression, classification, clustering, etc.
+- **[Machine Learning](./machine_learning/data/intro_machine_learning.md)** 🤖 : Régression, classification, clustering, etc.
 - **Data Visualization** 📊 : Power BI, Matplotlib, Seaborn. 
 - **[Streamlit](./Streamlit) 🌐 :** Création d'applications interactives pour la data visualization.
 - **[Développement Web](./web_development)** 🌍 : HTML, CSS, et introduction à la création de sites web interactifs.
