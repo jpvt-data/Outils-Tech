@@ -4,7 +4,7 @@
 
 Bienvenue dans la section **Machine Learning** !
 
-Cette partie est dédiée à l'apprentissage du Machine Learning à travers des fiches techniques qui te guideront à chaque étape : de l'introduction aux concepts clés, à la préparation des données, l'implémentation des algorithmes, jusqu'au déploiement de modèles.
+Cette partie est dédiée à l'apprentissage du Machine Learning à travers des fiches techniques qui guideront à chaque étape : de l'introduction aux concepts clés, à la préparation des données, l'implémentation des algorithmes, jusqu'au déploiement de modèles.
 
 ---
 
@@ -23,19 +23,19 @@ Le Machine Learning permet aux systèmes d'apprendre à partir des données et d
 Les fiches sont organisées de manière logique pour progresser étape par étape, en commençant par les bases et en allant vers des concepts plus avancés. Voici le sommaire avec un accès direct à chaque fiche :
 
 ### 1. **[Introduction au Machine Learning](./data/intro_machine_learning.md)**  
-   Une introduction aux types d'apprentissage, à la fois supervisé, non supervisé et par renforcement. Ce fichier te donne une base solide pour bien démarrer.
+   Une introduction aux types d'apprentissage, à la fois supervisé, non supervisé et par renforcement. Ce fichier fournit une base solide pour bien démarrer.
 
 ### 2. **[Préparation des données](./data/preparation_donnees.md)**  
-   Avant de plonger dans les modèles, il est essentiel de bien préparer les données. Cette fiche te guide à travers les étapes de nettoyage et de transformation.
+   Avant de plonger dans les modèles, il est essentiel de bien préparer les données. Cette fiche guide à travers les étapes de nettoyage et de transformation.
 
 ### 3. **[Séparation des données - Train/Test Split](./data/train_test_split.md)**  
-   Apprends à séparer tes données en échantillons d'entraînement et de test pour évaluer la performance de tes modèles.
+   Apprendre à séparer les données en échantillons d'entraînement et de test pour évaluer la performance des modèles.
 
 ---
 
 ### 4. **Modèles d'apprentissage supervisé**
 
-Voici les principales méthodes d'apprentissage supervisé que tu trouveras dans cette section :
+Voici les principales méthodes d'apprentissage supervisé à explorer dans cette section :
 
 - **[Régression Linéaire Simple](./data/regression_lineaire_simple.md)**  
   Introduction à la régression linéaire pour prédire une variable continue à partir d’une seule variable indépendante.
@@ -44,13 +44,13 @@ Voici les principales méthodes d'apprentissage supervisé que tu trouveras dans
   Approfondissement de la régression linéaire avec plusieurs variables indépendantes.
 
 - **[Régression - Cas pratique : Ventes de maisons](./data/regression_cas_pratique_ventes_maisons.md)**  
-  Applique la régression linéaire dans un cas concret de prévision des prix des maisons.
+  Appliquer la régression linéaire dans un cas concret de prévision des prix des maisons.
 
 - **[K-Nearest Neighbors (KNN)](./data/knn.md)**  
   Un algorithme simple et puissant pour la classification et la régression, très utilisé en apprentissage supervisé.
 
 - **[KNN Avancé](./data/knn_avance.md)**  
-  Approfondissement de l'algorithme KNN, avec des techniques avancées et des astuces pour améliorer ses performances.
+  Approfondir l'algorithme KNN, avec des techniques avancées et des astuces pour améliorer ses performances.
 
 ---
 
@@ -71,25 +71,25 @@ Les modèles d'apprentissage non supervisé permettent de travailler avec des do
 
 ### 6. **Évaluation des modèles et Optimisation**
 
-Une fois tes modèles entraînés, il est crucial de les évaluer et d'optimiser leurs performances. Cette section te fournit les outils nécessaires :
+Une fois les modèles entraînés, il est crucial de les évaluer et d'optimiser leurs performances. Cette section fournit les outils nécessaires :
 
 - **[Cross-Validation et Grid Search](./data/cross_validation_grid_search.md)**  
-  Apprends à valider tes modèles avec la validation croisée et à trouver les meilleurs hyperparamètres grâce à la recherche par grille.
+  Apprendre à valider les modèles avec la validation croisée et à trouver les meilleurs hyperparamètres grâce à la recherche par grille.
 
 - **[Pipeline et Cross-Validation](./data/pipeline_cross_validation.md)**  
-  Organise ton flux de travail avec un pipeline et utilise la validation croisée pour évaluer tes modèles de manière plus rigoureuse.
+  Organiser le flux de travail avec un pipeline et utiliser la validation croisée pour évaluer les modèles de manière plus rigoureuse.
 
 - **[Pipeline avec GridSearch et RandomizedSearch](./data/pipeline_gridsearch_randomized.md)**  
-  Approfondissement du pipeline avec des techniques avancées pour optimiser les hyperparamètres de tes modèles.
+  Approfondir le pipeline avec des techniques avancées pour optimiser les hyperparamètres des modèles.
 
 - **[Standardisation des données dans un pipeline](./data/pipeline_standardiser.md)**  
-  Apprends à standardiser les données dans le cadre de ton pipeline afin de mieux préparer tes modèles.
+  Apprendre à standardiser les données dans le cadre du pipeline afin de mieux préparer les modèles.
 
 ---
 
 ## 🔧 Bibliothèques et outils utilisés
 
-Pour mettre en pratique ces concepts, tu utiliseras principalement les outils suivants :
+Pour mettre en pratique ces concepts, utiliser principalement les outils suivants :
 
 - **Python** 🐍 : Le langage principal pour l'implémentation des modèles.
 - **Pandas** et **NumPy** : Pour la manipulation des données.
@@ -101,10 +101,11 @@ Pour mettre en pratique ces concepts, tu utiliseras principalement les outils su
 
 ## 💡 Ressources utiles
 
-Pour compléter ton apprentissage, voici quelques ressources utiles :
+Pour compléter l'apprentissage, voici quelques ressources utiles :
 
 - [Documentation officielle Scikit-learn](https://scikit-learn.org/stable/)  
 - [Cours Stanford ML (Andrew Ng)](https://www.coursera.org/learn/machine-learning)  
 - [Kaggle](https://www.kaggle.com/) : Plateforme pour les compétitions et les ensembles de données.
+
 
 [⬅ Retour à Outils-Tech](../README.md)
