@@ -35,8 +35,10 @@ Les fiches sont organisées de manière logique pour progresser étape par étap
 
 ### **Natural Language Processing (NLP)**
 
-- **[NLP - partie 1](./data/intro_nlp.md)**  
+- **[NLP - Introduction](./data/intro_nlp.md)**  
    Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
+- **[NLP - Stemming & Lemmatizing.md](.data/nlp_stemming_lemmatizing.md)**  
+   Techniques de Stemming et Lemmatizing pour simplifier et normaliser le texte en NLP.
 
 ---
 
