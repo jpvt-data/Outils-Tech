@@ -85,6 +85,9 @@ Une fois les modèles entraînés, il est crucial de les évaluer et d'optimiser
 - **[Standardisation des données dans un pipeline](./data/pipeline_standardiser.md)**  
   Apprendre à standardiser les données dans le cadre du pipeline afin de mieux préparer les modèles.
 
+- **[Pipeline de réduction de dimensions avec PCA](./data/pipeline_pca.md)**  
+  Réduire les dimensions des données à l'aide de l'Analyse en Composantes Principales (PCA) pour améliorer les visualisations et les performances des modèles.
+
 ---
 
 ## 🔧 Bibliothèques et outils utilisés
