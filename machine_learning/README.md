@@ -33,8 +33,8 @@ Les fiches sont organisées de manière logique pour progresser étape par étap
 
 ### **Natural Language Processing (NLP)**
 
-- **[NLP - partie 1](./data/intro_nlp.md)**
-  Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
+- **[NLP - partie 1](./data/intro_nlp.md)**  
+   Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
 
 ### **Modèles d'apprentissage supervisé**
 
