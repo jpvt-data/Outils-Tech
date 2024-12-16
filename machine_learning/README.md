@@ -22,18 +22,21 @@ Le Machine Learning permet aux systèmes d'apprendre à partir des données et d
 
 Les fiches sont organisées de manière logique pour progresser étape par étape, en commençant par les bases et en allant vers des concepts plus avancés. Voici le sommaire avec un accès direct à chaque fiche :
 
-### 1. **[Introduction au Machine Learning](./data/intro_machine_learning.md)**  
+### **[Introduction au Machine Learning](./data/intro_machine_learning.md)**  
    Une introduction aux types d'apprentissage, à la fois supervisé, non supervisé et par renforcement. Ce fichier fournit une base solide pour bien démarrer.
 
-### 2. **[Préparation des données](./data/preparation_donnees.md)**  
+### **[Préparation des données](./data/preparation_donnees.md)**  
    Avant de plonger dans les modèles, il est essentiel de bien préparer les données. Cette fiche guide à travers les étapes de nettoyage et de transformation.
 
-### 3. **[Séparation des données - Train/Test Split](./data/train_test_split.md)**  
+### **[Séparation des données - Train/Test Split](./data/train_test_split.md)**  
    Apprendre à séparer les données en échantillons d'entraînement et de test pour évaluer la performance des modèles.
 
----
+### **Natural Language Processing (NLP)**
 
-### 4. **Modèles d'apprentissage supervisé**
+   - **[NLP - partie 1](./data/intro_nlp.md)
+     Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
+
+### **Modèles d'apprentissage supervisé**
 
 Voici les principales méthodes d'apprentissage supervisé à explorer dans cette section :
 
@@ -52,9 +55,7 @@ Voici les principales méthodes d'apprentissage supervisé à explorer dans cett
 - **[KNN Avancé](./data/knn_avance.md)**  
   Approfondir l'algorithme KNN, avec des techniques avancées et des astuces pour améliorer ses performances.
 
----
-
-### 5. **Modèles d'apprentissage non supervisé**
+### **Modèles d'apprentissage non supervisé**
 
 Les modèles d'apprentissage non supervisé permettent de travailler avec des données non étiquetées. Voici quelques techniques populaires :
 
@@ -66,8 +67,6 @@ Les modèles d'apprentissage non supervisé permettent de travailler avec des do
 
 - **[Clustering Hiérarchique](./data/clustering_hierarchique.md)**  
   Cette méthode de clustering crée une hiérarchie de clusters, permettant une analyse plus approfondie des données.
-
----
 
 ### 6. **Évaluation des modèles et Optimisation**
 
