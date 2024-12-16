@@ -27,16 +27,18 @@ Les fiches sont organisées de manière logique pour progresser étape par étap
 
 ### **[Préparation des données](./data/preparation_donnees.md)**  
    Avant de plonger dans les modèles, il est essentiel de bien préparer les données. Cette fiche guide à travers les étapes de nettoyage et de transformation.
-   
----
 
 ### **[Séparation des données - Train/Test Split](./data/train_test_split.md)**  
    Apprendre à séparer les données en échantillons d'entraînement et de test pour évaluer la performance des modèles.
+
+---
 
 ### **Natural Language Processing (NLP)**
 
 - **[NLP - partie 1](./data/intro_nlp.md)**  
    Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
+
+---
 
 ### **Modèles d'apprentissage supervisé**
 
@@ -57,6 +59,8 @@ Voici les principales méthodes d'apprentissage supervisé à explorer dans cett
 - **[KNN Avancé](./data/knn_avance.md)**  
   Approfondir l'algorithme KNN, avec des techniques avancées et des astuces pour améliorer ses performances.
 
+---
+
 ### **Modèles d'apprentissage non supervisé**
 
 Les modèles d'apprentissage non supervisé permettent de travailler avec des données non étiquetées. Voici quelques techniques populaires :
@@ -70,7 +74,9 @@ Les modèles d'apprentissage non supervisé permettent de travailler avec des do
 - **[Clustering Hiérarchique](./data/clustering_hierarchique.md)**  
   Cette méthode de clustering crée une hiérarchie de clusters, permettant une analyse plus approfondie des données.
 
-### 6. **Évaluation des modèles et Optimisation**
+---
+
+### **Évaluation des modèles et Optimisation**
 
 Une fois les modèles entraînés, il est crucial de les évaluer et d'optimiser leurs performances. Cette section fournit les outils nécessaires :
 
