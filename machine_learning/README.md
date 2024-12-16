@@ -22,7 +22,7 @@ Le Machine Learning permet aux systèmes d'apprendre à partir des données et d
 
 Les fiches sont organisées de manière logique pour progresser étape par étape, en commençant par les bases et en allant vers des concepts plus avancés. Voici le sommaire avec un accès direct à chaque fiche :
 
-### **[Introduction au Machine Learning](./data/intro_machine_learning.md)**  
+### 1.**[Introduction au Machine Learning](./data/intro_machine_learning.md)**  
    Une introduction aux types d'apprentissage, à la fois supervisé, non supervisé et par renforcement. Ce fichier fournit une base solide pour bien démarrer.
 
 ### **[Préparation des données](./data/preparation_donnees.md)**  
