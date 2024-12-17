@@ -1,7 +1,3 @@
-Voici la fiche technique complète et documentée sur le géocodage, intégrant les informations de l'exercice, ainsi que l'exemple de création de la fonction et les aspects liés à la visualisation des données géographiques avec Folium.
-
----
-
 # Géocodage et Géocodage Inversé
 
 ## Introduction
