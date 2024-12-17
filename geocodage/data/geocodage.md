@@ -202,8 +202,8 @@ for lieu, coord in lieux.items():
         icon=folium.Icon(color='blue', icon='info-sign')
     ).add_to(carte_bordeaux)
 
-# Sauvegarder la carte sous forme de fichier HTML
-carte_bordeaux.save("carte_bordeaux.html")
+# Affichage de la carte
+carte_bordeaux
 ```
 
 #### Explication du code :
