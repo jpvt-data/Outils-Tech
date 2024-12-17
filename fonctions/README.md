@@ -17,7 +17,9 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
 - **[Machine Learning](./machine_learning)**  
   - Prétraitement des données  
   - Modélisation  
-  - Évaluation des modèles  
+  - Évaluation des modèles
+
+- **[Geocodage](../geocodage/**)
 
 - **[Data Visualization](./data_visualization)**  
   - Fonctions Matplotlib  
