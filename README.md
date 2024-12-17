@@ -10,6 +10,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 ## Outils et concepts couverts :
 - **[Python](./Python)** 🐍 : Fiches sur Pandas, NumPy, Regex, etc.
 - **SQL** 🗃️ : Requêtes de base, jointures, sous-requêtes, etc.
+- **[JSON & API](./json_api/README.md)** 🌐 : Manipulation de JSON et intégration avec les API REST via Python.
 - **[Machine Learning](./machine_learning/README.md)** 🤖 : Régression, classification, clustering, etc.
 - **Data Visualization** 📊 : Power BI, Matplotlib, Seaborn. 
 - **[Streamlit](./Streamlit) 🌐 :** Création d'applications interactives pour la data visualization.
