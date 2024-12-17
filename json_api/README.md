@@ -7,7 +7,7 @@ Ce chapitre regroupe des fiches techniques sur la manipulation des données JSON
 ### - **Introduction au JSON**
 Présentation du format JSON, de ses caractéristiques et de son utilisation dans l'échange de données.
 
-### - **Parse a JSON file with Pandas**
+### - **Analyser un fichier JSON avec Pandas**
 Utilisation de Pandas pour charger et analyser des fichiers JSON efficacement.
 
 ### - **API REST - Faire une requête depuis Python**
