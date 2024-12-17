@@ -213,8 +213,6 @@ carte_bordeaux
 - **Coordonnées des lieux d'intérêt** : Les lieux comme la Place de la Bourse, le Pont de Pierre, le Parc Bordelais, la Cité du Vin, et la Cathédrale Saint-André sont stockés dans un dictionnaire avec leurs coordonnées GPS respectives.
 
 - **Ajout des marqueurs** : Pour chaque lieu, un marqueur est ajouté à la carte. L'option popup=lieu permet d'afficher le nom du lieu lorsqu'on clique sur le marqueur, et l'option icon='info-sign' personnalise l'icône.
-
-- **Sauvegarde de la carte** : La carte générée est sauvegardée dans un fichier HTML nommé carte_bordeaux.html que vous pouvez ouvrir dans un navigateur pour visualiser la carte interactive.
   
 ---
 
