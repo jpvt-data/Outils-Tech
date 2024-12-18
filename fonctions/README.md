@@ -19,7 +19,7 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
   - Modélisation  
   - Évaluation des modèles
 
-- **[Geocodage](../geocodage/**)
+- **[Geocodage et Visualisation](../fonctions/geocodage.md)**
 
 - **[Data Visualization](./data_visualization)**  
   - Fonctions Matplotlib  
