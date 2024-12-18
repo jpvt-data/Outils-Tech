@@ -13,9 +13,7 @@ Les boucles sont des structures de contrôle très courantes en programmation, p
 3. `break` et `continue`
 4. Les boucles imbriquées
 5. Ressources
-6. Challenge
-    - Critères de validation
-
+   
 ---
 
 ## 1. Boucle conditionnelle `while` (tant que)
