@@ -87,6 +87,8 @@ plt.axis("off")
 plt.show()
 ```
 
+![wordcloud](../../images/wordcloud.png)
+
 ### 4. Personnalisation
 
 Changer le fond, les couleurs ou utiliser un masque pour donner une forme au WordCloud.
@@ -105,6 +107,7 @@ plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
 plt.show()
 ```
+![wordcloud](../../images/mask_wordcloud.png)
 
 ## Ressources supplémentaires
 
