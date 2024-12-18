@@ -33,16 +33,7 @@ Les fiches sont organisées de manière logique pour progresser étape par étap
 
 ---
 
-### **Natural Language Processing (NLP)**
-
-- **[Introduction](./data/intro_nlp.md)**  
-   Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
-- **[Stemming & Lemmatizing](./data/nlp_stemming_lemmatizing.md)**  
-   Techniques de Stemming et Lemmatizing pour simplifier et normaliser le texte en NLP.
-- **[WordCloud & Masque Image](./data/nlp_wordcloud.md)**  
-   Visualiser la fréquence des mots dans un texte ou un corpus, dans un nyage personnalisable.
-- **[Bag of Words & Analyse de Sentiment](./data/nlp_bag_of_words.md)**  
-   Traitement du langage naturel pour l'analyse et application concrète pour le sentiment analysis.
+### **[Natural Language Processing (NLP)](.data/nlp.md)**
   
 ---
 
