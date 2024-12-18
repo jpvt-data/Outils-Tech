@@ -25,16 +25,6 @@ Les variables sont des éléments clés de tout langage de programmation. En Pyt
 
 Les variables permettent de rendre un programme flexible, car elles stockent des informations et permettent de les réutiliser ou de les modifier au besoin.
 
-## Objectifs
-
-À l'issue de cette fiche, il sera possible de :
-- Comprendre ce qu'est une variable et son rôle en Python.
-- Identifier les différents types de variables en Python.
-- Déclarer et manipuler des variables efficacement.
-- Vérifier le type d'une variable.
-- Convertir une variable d'un type à un autre (cast).
-- Interagir avec l'utilisateur via les entrées/sorties.
-
 ## Définition d'une Variable
 
 Une variable en Python est un espace mémoire qui contient une valeur. Cette valeur peut être un nombre, un texte, ou d'autres types de données. Le nom de la variable est une étiquette qui permet d'accéder à cette valeur en mémoire. Il est possible de modifier la valeur d'une variable au cours de l'exécution du programme.
