@@ -21,6 +21,8 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
 
 - **[Geocodage et Visualisation](../fonctions/geocodage.md)**
 
+- **[Text Mining et NLP](../fonctions/nlp.md)**
+
 - **[Data Visualization](./data_visualization)**  
   - Fonctions Matplotlib  
   - Fonctions Seaborn  
