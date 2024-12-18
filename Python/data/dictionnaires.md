@@ -4,13 +4,9 @@
 
 Les dictionnaires en Python sont des structures de données très puissantes qui permettent de stocker des données sous forme de paires clé-valeur.
 
-Contrairement aux listes où les éléments sont indexés par des entiers, les dictionnaires utilisent des clés personnalisées pour accéder à leurs valeurs.
+Contrairement aux listes où les éléments sont indexés par des entiers, les dictionnaires utilisent des clés personnalisées pour accéder à leurs valeurs. Cette structure est particulièrement utile dans des situations où l'on souhaite associer une valeur spécifique à un identifiant unique et faciliter l'accès à ces données.
 
-Cette structure est particulièrement utile dans des situations où l'on souhaite associer une valeur spécifique à un identifiant unique et faciliter l'accès à ces données.
-
-L'objectif de cette fiche est de comprendre la création, l'utilisation et les opérations sur les dictionnaires en Python, en montrant des exemples concrets d’utilisation.
-
-À la fin de cette fiche, il sera possible de manipuler des dictionnaires pour stocker et accéder à des données de manière efficace.
+L'objectif de cette fiche est de comprendre la création, l'utilisation et les opérations sur les dictionnaires en Python, en montrant des exemples concrets d’utilisation. À la fin de cette fiche, il sera possible de manipuler des dictionnaires pour stocker et accéder à des données de manière efficace.
 
 ---
 
