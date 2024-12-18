@@ -33,7 +33,7 @@ Les fiches sont organisées de manière logique pour progresser étape par étap
 
 ---
 
-### **[Natural Language Processing (NLP)](.data/nlp.md)**
+### **[Natural Language Processing (NLP)](./data/nlp.md)**
   
 ---
 
