@@ -126,7 +126,7 @@ def generer_wordcloud_avec_masque(frequences, chemin_image):
     masque = np.array(Image.open(chemin_image))
 
     # Générer le wordcloud
-    wordcloud = WordCloud(mask=masque, background_color='white', contour_width=1, contour_color='black').generate_from_frequencies(frequences)
+    wordcloud = WordCloud(mask=masque, background_color='white').generate_from_frequencies(frequences)
 
     plt.figure(figsize=(10, 10))
     plt.imshow(wordcloud, interpolation='bilinear')
