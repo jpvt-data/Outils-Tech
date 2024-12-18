@@ -16,7 +16,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Variables et types de données](./data/variables_and_data_types.md)
 - [Opérateurs](./data/operateurs.md)
 - [Structures conditionnelles](./data/conditions.md)
-- [Boucles](./data/loops_and_conditions.md)
+- [Boucles](./data/boucles.md)
 
 ### 2. Manipulation de données
 - [Introduction à Pandas](./data/pandas_cheat_sheet.md)
