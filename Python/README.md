@@ -14,6 +14,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 
 ### 1. Bases de Python
 - [Variables et types de données](./data/variables_and_data_types.md)
+- [Opérateurs](./data/operateurs.md)
 - [Boucles et conditions](./data/loops_and_conditions.md)
 
 ### 2. Manipulation de données
