@@ -10,7 +10,7 @@ Cette fiche technique a pour objectif de vous apprendre à manipuler les chaîne
 
 ## Sommaire
 
-1. [Les chaînes de caractères : Qu'est-ce que c'est ?](#les-chaînes-de-caractères-qu-est-ce-que-c'est)
+1. [Les chaînes de caractères : Qu'est-ce que c'est ?](#les-chaînes-de-caractères-qu'est-ce-que-c'est)
 2. [Sélectionner des caractères dans une chaîne](#sélectionner-des-caractères-dans-une-chaîne)
 3. [Les chaînes de caractères sont immuables](#les-chaînes-de-caractères-sont-immuables)
 4. [Quelques détails supplémentaires sur les chaînes](#quelques-détails-supplémentaires-sur-les-chaînes)
