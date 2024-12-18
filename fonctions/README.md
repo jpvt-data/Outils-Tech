@@ -8,13 +8,13 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
 
 ## Arborescence des Fonctions
 
-- **[Python](./Python)**  
+- **Python**  
   - Fonctions Pandas  
   - Fonctions NumPy  
   - Fonctions Regex  
   - Autres fonctions Python générales  
 
-- **[Machine Learning](./machine_learning)**  
+- **Machine Learning**  
   - Prétraitement des données  
   - Modélisation  
   - Évaluation des modèles
@@ -23,12 +23,12 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
 
 - **[Text Mining et NLP](../fonctions/nlp.md)**
 
-- **[Data Visualization](./data_visualization)**  
+- **Data Visualization**  
   - Fonctions Matplotlib  
   - Fonctions Seaborn  
   - Fonctions Power BI (via Python)  
 
-- **[Streamlit](./Streamlit)**  
+- **Streamlit**  
   - Fonctions de création d’applications  
   - Widgets et interactions  
 
