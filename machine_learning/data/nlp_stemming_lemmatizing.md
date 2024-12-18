@@ -1,4 +1,4 @@
-# NLP Partie 2 - Stemming & Lemmatizing
+# NLP 2 - Stemming & Lemmatizing
 
 ## Introduction
 
