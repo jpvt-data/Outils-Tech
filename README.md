@@ -10,7 +10,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 ---
 
 ## Outils et concepts couverts :
-- **[Python](./Python)** 🐍 : Fiches sur Pandas, NumPy, Regex, etc.
+- **[Python](./Python/README.md)** 🐍 : Fiches sur Pandas, NumPy, Regex, etc.
 - **SQL** 🗃️ : Requêtes de base, jointures, sous-requêtes, etc.
 - **[JSON & API](./json_api/README.md)** 🌐 : Manipulation de JSON et intégration avec les API REST via Python.
 - **[Géolocalisation et Géocodage](./geocodage/geocodage.md)** 🌍 : Géocodage, géocodage inversé, cartographie avec Folium.
