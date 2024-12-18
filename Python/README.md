@@ -18,6 +18,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Structures conditionnelles](./data/conditions.md)
 - [Boucles](./data/boucles.md)
 - [Commenter son code](./data/commenter.md)
+- [Strings - Chaines de caractères](./data/strings.md)
 
 ### 2. Manipulation de données
 - [Introduction à Pandas](./data/pandas_cheat_sheet.md)
