@@ -1,7 +1,3 @@
-Voici une fiche pédagogique sur l'utilisation de l'API *mediastack* pour récupérer des articles de presse, analyser les données et créer des visualisations. Ce projet inclut également un travail de nettoyage de texte, l'analyse des sentiments et la création de nuages de mots.
-
----
-
 # **Analyse des sentiments à partir des articles de presse via l'API Mediastack**
 
 ### **1. Introduction**
@@ -174,9 +170,3 @@ plt.show()
 
 - L'analyse temporelle permet de comprendre comment les articles évoluent dans le temps, et quels sujets sont les plus abordés selon les périodes.
 - Une analyse plus approfondie des sentiments pourrait être ajoutée avec un modèle de NLP pour déterminer l'opinion exprimée dans chaque article.
-
-Avec ce code, tu peux déjà récupérer des articles, les analyser et créer des visualisations. Cette base te permettra de travailler davantage sur l'analyse de sentiments et d'affiner l'interprétation des données.
-
----
-
-Cette approche te donne un bon point de départ pour une analyse sentimentale, tu peux aller plus loin en intégrant des outils comme *spaCy* ou *TextBlob* pour analyser les sentiments des textes récupérés.
