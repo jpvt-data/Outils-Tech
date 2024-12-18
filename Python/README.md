@@ -1,7 +1,6 @@
 [⬅ Retour à Outils-Tech](../README.md)
 
 🚧 **Work in Progress** 🚧
-Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 
 ---
 
