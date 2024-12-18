@@ -20,6 +20,9 @@ nltk.download('stopwords')
 
 # Charger le modèle Spacy pour le français
 !python -m spacy download fr_core_news_sm
+
+# Charger le modèle Spacy pour l'anglais (modifier la fonction)
+!python -m spacy download en_core_web_sm
 ```
 
 ---
