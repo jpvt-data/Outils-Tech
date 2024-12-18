@@ -16,12 +16,11 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
 
 - **Machine Learning**  
   - Prétraitement des données  
-  - Modélisation  
+  - Modélisation
+  - [Text Mining et NLP](../fonctions/nlp.md)
   - Évaluation des modèles
 
 - **[Geocodage et Visualisation](../fonctions/geocodage.md)**
-
-- **[Text Mining et NLP](../fonctions/nlp.md)**
 
 - **Data Visualization**  
   - Fonctions Matplotlib  
@@ -32,7 +31,7 @@ Les fonctions sont organisées en sous-dossiers selon les différents domaines e
   - Fonctions de création d’applications  
   - Widgets et interactions  
 
-- **[JSON & API](./json_api)**  
+- **JSON & API**  
   - Fonctions de manipulation JSON  
   - Fonctions d'appel d'API REST  
   - Autres fonctions API  
