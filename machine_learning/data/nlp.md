@@ -20,4 +20,7 @@ Dans ce chapitre, nous explorerons les différentes étapes et techniques utilis
    Visualiser la fréquence des mots dans un texte ou un corpus, dans un nyage personnalisable.
   
 - **[Bag of Words & Analyse de Sentiment](./nlp_bag_of_words.md)**  
-   Traitement du langage naturel pour l'analyse et application concrète pour le sentiment analysis.
+   Traitement du langage naturel permettant de transformer des textes en données numériques pour l'analyse
+
+- **[TF-IDF - Analyse de Texte](./tf_idf.md)**  
+   Conversion des textes en données numériques exploitables pour les modèles de machine learning.
