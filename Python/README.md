@@ -13,12 +13,13 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 ## 📚 Contenu
 
 ### 1. Bases de Python
-- [Variables et types de données](./data/variables_and_data_types.md)
+- [Introduction à Python, Variables et Types de données](./data/variables_and_data_types.md)
 - [Opérateurs](./data/operateurs.md)
 - [Structures conditionnelles](./data/conditions.md)
 - [Boucles](./data/boucles.md)
 - [Commenter son code](./data/commenter.md)
 - [Strings - Chaines de caractères](./data/strings.md)
+- [Listes](./data/listes.md)
 
 ### 2. Manipulation de données
 - [Introduction à Pandas](./data/pandas_cheat_sheet.md)
