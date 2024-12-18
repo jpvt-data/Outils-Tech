@@ -1,3 +1,14 @@
+# NLP - Traitement du Langage Naturel
+
+Le **traitement du langage naturel (NLP)** est un domaine de l'intelligence artificielle qui permet aux machines de comprendre, d'interpréter et de générer le langage humain.
+
+Le NLP englobe un ensemble de techniques et d'outils qui permettent de manipuler les données textuelles pour en extraire des informations utiles.
+
+Que ce soit pour l'analyse des sentiments, la classification de texte, la traduction automatique, ou encore la génération de texte, le NLP est omniprésent dans nos interactions avec les technologies modernes.
+
+Dans ce chapitre, nous explorerons les différentes étapes et techniques utilisées en NLP, en mettant l'accent sur leur application concrète en Machine Learning et Data Science.
+
+## Sommaire des fiches
 
 - **[Introduction](./intro_nlp.md)**  
    Introduction au traitement du langage naturel (NLP) et ses applications en Machine Learning
