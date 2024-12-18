@@ -17,6 +17,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Opérateurs](./data/operateurs.md)
 - [Structures conditionnelles](./data/conditions.md)
 - [Boucles](./data/boucles.md)
+- [Commenter son code](./data/commenter.md)
 
 ### 2. Manipulation de données
 - [Introduction à Pandas](./data/pandas_cheat_sheet.md)
