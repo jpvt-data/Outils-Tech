@@ -5,7 +5,7 @@ L'API *mediastack* permet de récupérer des articles de presse à partir de dif
 
 ### **2. Préparation de l'environnement**
 
-Avant d'utiliser l'API, tu dois t'inscrire sur [mediastack](https://mediastack.com/) pour obtenir une clé API gratuite. Cette clé te permettra de faire des requêtes.
+Avant d'utiliser l'API, s'inscrire sur [mediastack](https://mediastack.com/) pour obtenir une clé API gratuite. Cette clé permettra de faire des requêtes.
 
 ### **3. Installation des bibliothèques nécessaires**
 ```bash
