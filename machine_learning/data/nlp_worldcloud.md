@@ -21,7 +21,9 @@ Apprendre à générer un WordCloud en Python en passant par toutes les étapes 
 
 import nltk
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 import spacy
+import string
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import numpy as np
@@ -41,24 +43,21 @@ python -m spacy download fr_core_news_sm
 
 - Fonction de nettoyage de texte
 ```python
-def nettoyer_texte(texte, langue='fr'):
-    import string
-    nlp = spacy.load('fr_core_news_sm')
-    stop_words = set(stopwords.words(langue))
+nlp = spacy.load('fr_core_news_sm')
+stop_words = nlp.Defaults.stop_words
 
-    # Suppression de la ponctuation
-    trans = str.maketrans('', '', string.punctuation)
-    texte = texte.translate(trans)
-
-    # Lemmatisation
-    doc = nlp(texte.lower())
-    tokens_clean = [token.lemma_ for token in doc if token.text not in stop_words and token.text.isalpha()]
-
+def nettoyer_texte(texte):
+    doc = nlp(texte)
+    tokens_clean = [
+        token.text.lower()
+        for token in doc
+        if token.text.lower() not in stop_words and token.text not in string.punctuation
+    ]
     return tokens_clean
 
 texte = '''Cette édition des Misérables rend disponibles trois états de l'oeuvre: son texte, établi selon les règles classiques, son état au moment où Hugo en abandonne la rédaction en février 1848."'''
-
 mots_nettoyes = nettoyer_texte(texte)
+print(mots_nettoyes)
 ```
 
 ### 2. Calcul des fréquences des mots
@@ -96,7 +95,7 @@ Changer le fond, les couleurs ou utiliser un masque pour donner une forme au Wor
 
 ```python
 # Charger une image pour le masque
-mask_image = np.array(Image.open("chemin/vers/image.jpg"))
+mask_image = np.array(Image.open("Éléphant_(détouré).png")) # Exemple d'image à fond blanc (avoir un contour précis)
 
 wordcloud = WordCloud(width=800, height=400, max_font_size=100, background_color="white", mask=mask_image)
 wordcloud.generate_from_frequencies(frequences)
