@@ -30,7 +30,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 ### 5. Divers
 - [Gestion des erreurs et exceptions](./data/error_handling.md)
 - [Compréhensions de listes](./data/list_comprehensions.md)
-- [Validation des données](./data/pydantic.md)
+- [Validation des données - Pydantic](./data/pydantic.md)
 
 ## 🔗 Comment utiliser ce répertoire ?
 1. Cliquez sur les liens ci-dessus pour accéder directement à une fiche technique.
