@@ -6,12 +6,6 @@ En programmation, les structures conditionnelles permettent de contrôler le flu
 
 Dans cette fiche, on expliquera les différentes structures conditionnelles disponibles en Python et l'importance de l'indentation pour les rendre fonctionnelles. Cette approche est essentielle pour construire des programmes interactifs qui réagissent à des entrées ou des événements.
 
-## Objectifs
-
-- **Comprendre l'importance de l'indentation dans le code Python.**
-- **Savoir utiliser les structures conditionnelles (if, if-else, if-elif-else).**
-- **Maîtriser l’utilisation de ces structures pour prendre des décisions logiques dans un programme.**
-
 ## Sommaire
 
 1. **L'Indentation**
