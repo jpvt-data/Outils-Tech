@@ -33,15 +33,14 @@ Commenter son code est une des pratiques les plus importantes dans la programmat
 Voici un exemple de code commenté :
 
 ```python
-# Initialisation de la liste des utilisateurs
-utilisateurs = ['Alice', 'Bob', 'Charlie']
+# Initialisation de la liste des Pokémons capturés
+pokemons = ['Pikachu', 'Salamèche', 'Bulbizarre']
 
-# Création d'une nouvelle liste avec les utilisateurs formatés
-# On ajoute le préfixe "Utilisateur: " à chaque nom dans la liste
-utilisateurs_formatés = [f"Utilisateur: {nom}" for nom in utilisateurs]
+# Ajout du suffixe « Capturé » à chaque nom de Pokémon
+pokemons_captures = [f"{nom} Capturé" for nom in pokemons]
 
-# Affichage des utilisateurs formatés
-print(utilisateurs_formatés)
+# Affichage des Pokémons avec leur état
+print(pokemons_captures)
 ```
 
 Dans cet exemple, chaque étape est expliquée pour éviter toute confusion.
@@ -58,12 +57,12 @@ Lorsque Python rencontre un problème, il génère un message d'erreur. Ce messa
 
 ```python
 # Erreur typique : une variable n'est pas définie
-print(nom)
+print(pokemon)
 ```
 
-**Message d'erreur** : `NameError: name 'nom' is not defined`.
+**Message d'erreur** : `NameError: name 'pokemon' is not defined`.
 
-Dans ce cas, l'erreur indique que la variable `nom` n'a pas été définie avant d'être utilisée.
+Dans ce cas, l'erreur indique que la variable `pokemon` n'a pas été définie avant d'être utilisée.
 
 ### 2. **Utiliser les outils de débogage**
 
@@ -72,15 +71,15 @@ Python dispose de nombreux outils pour faciliter le débogage, notamment la fonc
 Voici un exemple de débogage avec `print()` :
 
 ```python
-def calcul_somme(a, b):
-    print(f"a = {a}, b = {b}")  # Affiche les valeurs de a et b
-    return a + b
+def attaque_pokemon(pokemon, puissance):
+    print(f"Pokémon = {pokemon}, Puissance = {puissance}")  # Affiche les valeurs
+    return f"{pokemon} inflige {puissance} points de dégâts !"
 
-resultat = calcul_somme(3, 5)
-print(f"Résultat = {resultat}")
+resultat = attaque_pokemon("Dracaufeu", 90)
+print(resultat)
 ```
 
-Dans cet exemple, on peut suivre les valeurs des variables avant qu'elles ne soient utilisées dans le calcul.
+Dans cet exemple, on peut suivre les valeurs des variables avant qu'elles ne soient utilisées dans la fonction.
 
 ### 3. **Utiliser un débogueur**
 
@@ -89,11 +88,13 @@ Le module `pdb` de Python permet de mettre des points d'arrêt dans le code et d
 ```python
 import pdb
 
-def calcul_somme(a, b):
+def evolution_pokemon(pokemon, niveau):
     pdb.set_trace()  # Déclenche l'arrêt à ce point
-    return a + b
+    if niveau >= 16:
+        return f"{pokemon} évolue !"
+    return f"{pokemon} n'est pas encore prêt pour évoluer."
 
-resultat = calcul_somme(3, 5)
+resultat = evolution_pokemon("Reptincel", 14)
 ```
 
 Une fois le programme en pause à l'instruction `pdb.set_trace()`, on peut interagir avec le programme, inspecter les variables et avancer étape par étape dans le code.
@@ -102,24 +103,24 @@ Une fois le programme en pause à l'instruction `pdb.set_trace()`, on peut inter
 
 ## Exemple de code détaillé
 
-Imaginons que l'on souhaite créer une fonction qui prédit si une personne est éligible à un prêt bancaire en fonction de son revenu annuel et de son historique de crédit. On va utiliser un modèle simple de Machine Learning pour prédire cette éligibilité. C’est un exemple de modèle supervisé où le modèle apprend à partir de données étiquetées (le résultat est déjà connu).
+Imaginons que l'on souhaite créer une fonction qui prédit si un Pokémon peut remporter un combat en fonction de ses points d’attaque et de défense. On va utiliser un modèle simple de Machine Learning pour faire cette prédiction.
 
 ### 1. **Préparer les données**
 
 Le jeu de données contient les informations suivantes :
 
-- Revenu annuel (`revenu`)
-- Score de crédit (`score_credit`)
-- Éligibilité au prêt (`éligible` : 1 pour oui, 0 pour non)
+- Points d’attaque (`attaque`)
+- Points de défense (`defense`)
+- Résultat du combat (`victoire` : 1 pour victoire, 0 pour défaite)
 
 ```python
 import pandas as pd
 
 # Création du DataFrame
 data = {
-    'revenu': [30000, 45000, 60000, 50000, 120000],
-    'score_credit': [650, 700, 750, 680, 800],
-    'éligible': [0, 1, 1, 0, 1]
+    'attaque': [55, 70, 120, 60, 90],
+    'defense': [40, 65, 85, 50, 75],
+    'victoire': [0, 1, 1, 0, 1]
 }
 
 df = pd.DataFrame(data)
@@ -127,16 +128,16 @@ df = pd.DataFrame(data)
 
 ### 2. **Préparer les données pour le modèle**
 
-On va séparer les caractéristiques (revenu et score de crédit) de l'étiquette (éligibilité au prêt).
+On va séparer les caractéristiques (attaque et défense) de l’étiquette (résultat du combat).
 
 ```python
-X = df[['revenu', 'score_credit']]  # Les caractéristiques
-y = df['éligible']  # L'étiquette (la variable que l'on veut prédire)
+X = df[['attaque', 'defense']]  # Les caractéristiques
+y = df['victoire']  # L'étiquette
 ```
 
 ### 3. **Créer et entraîner le modèle**
 
-On va utiliser un modèle de régression logistique pour prédire si une personne est éligible au prêt en fonction de son revenu et de son score de crédit.
+On va utiliser un modèle de régression logistique pour prédire l'issue du combat.
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -155,23 +156,22 @@ modele.fit(X_train, y_train)
 
 ### 4. **Faire une prédiction**
 
-Une fois que le modèle est entraîné, on peut prédire l'éligibilité d'une nouvelle personne.
+Une fois que le modèle est entraîné, on peut prédire l'issue d'un combat pour un nouveau Pokémon.
 
 ```python
 # Données de test pour la prédiction
-nouvelle_personne = [[70000, 720]]  # Revenu de 70,000 et score de crédit de 720
+nouveau_pokemon = [[110, 70]]  # Attaque de 110 et défense de 70
 
 # Prédiction
-prediction = modele.predict(nouvelle_personne)
-print(f"Éligibilité au prêt : {'Oui' if prediction[0] == 1 else 'Non'}")
+prediction = modele.predict(nouveau_pokemon)
+print(f"Victoire probable : {'Oui' if prediction[0] == 1 else 'Non'}")
 ```
 
 ### Explication des étapes :
 
-- **Données d'entrée** : On utilise les informations de revenu et de score de crédit pour prédire l’éligibilité.
-- **Modèle** : Le modèle de régression logistique est un algorithme de Machine Learning supervisé qui est bien adapté pour des tâches de classification binaire (oui/non, éligible/non éligible).
-- **Entraînement du modèle** : On divise les données en deux parties : une pour entraîner le modèle et l'autre pour tester sa performance.
-- **Prédiction** : Le modèle prédit si une nouvelle personne est éligible ou non en fonction de son revenu et de son score de crédit.
+- **Données d'entrée** : Les points d'attaque et de défense sont utilisés pour prédire le résultat.
+- **Modèle** : La régression logistique est adaptée pour des tâches de classification binaire (victoire/défaite).
+- **Prédiction** : Le modèle prédit si un Pokémon a des chances de remporter le combat.
 
 ---
 
@@ -179,9 +179,10 @@ print(f"Éligibilité au prêt : {'Oui' if prediction[0] == 1 else 'Non'}")
 
 Documenter son code et savoir le déboguer efficacement sont des compétences essentielles pour tout développeur. En expliquant bien son raisonnement, on s'assure que d'autres développeurs pourront comprendre et reprendre le travail plus facilement. Le débogage, quant à lui, permet de corriger les erreurs et d’optimiser le code. Ces bonnes pratiques permettent de travailler plus sereinement, que ce soit seul ou en équipe.
 
---- 
+---
 
 ### Ressources supplémentaires :
 
 - [Python - Debugging with pdb](https://docs.python.org/3/library/pdb.html)
 - [Commenter son code en Python - Guide complet](https://realpython.com/python-comments-guide/)
+
