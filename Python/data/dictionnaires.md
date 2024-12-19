@@ -6,7 +6,7 @@ Les dictionnaires en Python sont des structures de données très puissantes qui
 
 Contrairement aux listes où les éléments sont indexés par des entiers, les dictionnaires utilisent des clés personnalisées pour accéder à leurs valeurs. Cette structure est particulièrement utile dans des situations où l'on souhaite associer une valeur spécifique à un identifiant unique et faciliter l'accès à ces données.
 
-L'objectif de cette fiche est de comprendre la création, l'utilisation et les opérations sur les dictionnaires en Python, en montrant des exemples concrets d’utilisation. À la fin de cette fiche, il sera possible de manipuler des dictionnaires pour stocker et accéder à des données de manière efficace.
+L'objectif de cette fiche est de comprendre la création, l'utilisation et les opérations sur les dictionnaires en Python, en montrant des exemples concrets d’utilisation.
 
 ---
 
@@ -21,16 +21,16 @@ Un dictionnaire en Python est une collection non ordonnée de paires clé-valeur
 mon_dictionnaire = {}
 
 # Création d'un dictionnaire avec des éléments
-personnes = {
-    "Alex": 25,
-    "Ben": 30,
-    "Charlie": 35
+pokemons = {
+    "Pikachu": "électrique",
+    "Bulbizarre": "plante",
+    "Salamèche": "feu"
 }
 ```
 
 **Explication** :  
 - `mon_dictionnaire` est un dictionnaire vide, prêt à être rempli.
-- Le dictionnaire `personnes` contient des paires clé-valeur où les clés sont des noms (par exemple "Alex") et les valeurs sont des âges (par exemple 25).
+- Le dictionnaire `pokemons` contient des paires clé-valeur où les clés sont des noms de Pokémons (par exemple "Pikachu") et les valeurs sont leurs types (par exemple "électrique").
 
 ### 2. Accès aux Valeurs d'un Dictionnaire
 
@@ -39,12 +39,12 @@ L'accès aux valeurs se fait en utilisant la clé correspondante. En revanche, c
 #### Exemple d'accès à une valeur par clé :
 
 ```python
-# Accéder à l'âge de Ben
-print(personnes["Ben"])  # Affiche 30
+# Accéder au type de Pikachu
+print(pokemons["Pikachu"])  # Affiche "électrique"
 ```
 
 **Explication** :  
-L'accès à la valeur de la clé "Ben" retourne l'âge associé, soit 30.
+L'accès à la valeur de la clé "Pikachu" retourne le type associé, soit "électrique".
 
 ### 3. Ajout et Modification des Éléments
 
@@ -53,24 +53,24 @@ Les dictionnaires permettent d'ajouter de nouveaux éléments ou de modifier ceu
 #### Ajout d'un nouvel élément :
 
 ```python
-# Ajouter une nouvelle personne au dictionnaire
-personnes["David"] = 40
-print(personnes)
+# Ajouter un nouveau Pokémon au dictionnaire
+pokemons["Carapuce"] = "eau"
+print(pokemons)
 ```
 
 **Explication** :  
-On ajoute une nouvelle entrée où "David" est la clé et 40 est la valeur associée.
+On ajoute une nouvelle entrée où "Carapuce" est la clé et "eau" est la valeur associée.
 
 #### Modification d'un élément existant :
 
 ```python
-# Modifier l'âge de Ben
-personnes["Ben"] = 32
-print(personnes)
+# Modifier le type de Pikachu
+pokemons["Pikachu"] = "électrique et acier"
+print(pokemons)
 ```
 
 **Explication** :  
-La valeur associée à la clé "Ben" est mise à jour de 30 à 32.
+La valeur associée à la clé "Pikachu" est mise à jour pour refléter un double type "électrique et acier".
 
 ### 4. Suppression d'Éléments
 
@@ -79,9 +79,9 @@ Il est possible de supprimer des éléments d'un dictionnaire de plusieurs mani�
 #### Suppression avec `del` :
 
 ```python
-# Supprimer l'entrée "Charlie"
-del personnes["Charlie"]
-print(personnes)
+# Supprimer l'entrée "Bulbizarre"
+del pokemons["Bulbizarre"]
+print(pokemons)
 ```
 
 **Explication** :  
@@ -90,10 +90,10 @@ La fonction `del` permet de supprimer une paire clé-valeur en spécifiant la cl
 #### Suppression avec `pop()` :
 
 ```python
-# Supprimer et récupérer l'élément "Alex"
-age_alex = personnes.pop("Alex")
-print(age_alex)  # Affiche 25
-print(personnes)
+# Supprimer et récupérer le type de Salamèche
+type_salamèche = pokemons.pop("Salamèche")
+print(type_salamèche)  # Affiche "feu"
+print(pokemons)
 ```
 
 **Explication** :  
@@ -107,8 +107,8 @@ Les dictionnaires offrent diverses méthodes pour manipuler les données de mani
 
 ```python
 # Parcourir les clés et valeurs du dictionnaire
-for nom, age in personnes.items():
-    print(f"{nom} a {age} ans")
+for nom, type_ in pokemons.items():
+    print(f"{nom} est de type {type_}")
 ```
 
 **Explication** :  
@@ -117,9 +117,9 @@ La méthode `items()` retourne un générateur qui permet de parcourir toutes le
 #### Vérifier la présence d'une clé :
 
 ```python
-# Vérifier si la clé "Ben" existe dans le dictionnaire
-if "Ben" in personnes:
-    print("Ben est dans le dictionnaire")
+# Vérifier si la clé "Pikachu" existe dans le dictionnaire
+if "Pikachu" in pokemons:
+    print("Pikachu est dans le dictionnaire")
 ```
 
 **Explication** :  
@@ -129,42 +129,46 @@ L'opérateur `in` permet de vérifier la présence d'une clé dans un dictionnai
 
 ```python
 # Obtenir toutes les clés
-print(personnes.keys())
+print(pokemons.keys())
 
 # Obtenir toutes les valeurs
-print(personnes.values())
+print(pokemons.values())
 ```
 
 **Explication** :  
 La méthode `keys()` retourne un objet dict_keys contenant toutes les clés, et `values()` retourne un objet dict_values contenant toutes les valeurs.
 
-### 6. Exemple Complet : Gestion d'un Frigo
+### 6. Exemple Complet : Gestion d'une Équipe Pokémon
 
-Imaginons qu’on souhaite organiser les aliments de notre frigo sous forme de dictionnaire. Les catégories d'aliments seront les clés, et les valeurs seront les listes d’aliments correspondantes.
+Imaginons qu’on souhaite organiser une équipe de Pokémons sous forme de dictionnaire. Les noms des Pokémons seront les clés, et les valeurs seront leurs niveaux d'entraînement.
 
 ```python
-# Création d'un dictionnaire pour le frigo
-frigo = {
-    "viandes": ["boeuf", "poulet", "porc"],
-    "fruits": ["pomme", "banane", "orange"],
-    "légumes": ["carotte", "brocoli", "tomate"]
+# Création d'un dictionnaire pour l'équipe Pokémon
+équipe = {
+    "Pikachu": 35,
+    "Evoli": 20,
+    "Dracaufeu": 50
 }
 
-# Accéder aux fruits dans le frigo
-print(frigo["fruits"])  # Affiche ['pomme', 'banane', 'orange']
+# Accéder au niveau de Pikachu
+print(équipe["Pikachu"])  # Affiche 35
 
-# Ajouter un nouvel aliment dans les légumes
-frigo["légumes"].append("épinard")
-print(frigo["légumes"])  # Affiche ['carotte', 'brocoli', 'tomate', 'épinard']
+# Ajouter un nouveau Pokémon
+équipe["Tortank"] = 45
+print(équipe)
 
-# Supprimer un aliment
-frigo["fruits"].remove("banane")
-print(frigo["fruits"])  # Affiche ['pomme', 'orange']
+# Améliorer le niveau de Dracaufeu
+équipe["Dracaufeu"] += 10
+print(équipe["Dracaufeu"])  # Affiche 60
+
+# Supprimer un Pokémon de l'équipe
+del équipe["Evoli"]
+print(équipe)
 ```
 
 **Explication** :  
-- Le dictionnaire `frigo` contient trois catégories : "viandes", "fruits", et "légumes".
-- On accède à la liste des fruits, on y ajoute un nouvel élément (épinard dans la catégorie "légumes") et on supprime un élément de la catégorie "fruits".
+- Le dictionnaire `équipe` contient trois Pokémons avec leurs niveaux d'entraînement respectifs.
+- On accède à un niveau, on ajoute un nouveau Pokémon, on améliore un niveau existant et on supprime un Pokémon de l'équipe.
 
 ### 7. Ressources Complémentaires
 
@@ -177,3 +181,4 @@ Pour aller plus loin et approfondir la compréhension des dictionnaires en Pytho
 ---
 
 Cette fiche a pour but de fournir une compréhension complète des dictionnaires, leur utilisation et leurs méthodes principales. Grâce à ces concepts et exemples, il sera facile d'intégrer les dictionnaires dans des projets Python pour organiser et manipuler des données efficacement.
+
