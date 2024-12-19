@@ -2,7 +2,7 @@
 
 ## Introduction
 
-En programmation, les structures conditionnelles permettent de contrôler le flux d'exécution du programme en fonction de certaines conditions. Cela signifie qu'on peut définir des comportements différents selon que certaines situations sont remplies ou non. En Python, l'indentation est cruciale pour la clarté et l'organisation du code, car elle détermine les blocs de code à exécuter selon les conditions spécifiées. 
+En programmation, les structures conditionnelles permettent de contrôler le flux d'exécution du programme en fonction de certaines conditions. Cela signifie qu'on peut définir des comportements différents selon que certaines situations sont remplies ou non. En Python, l'indentation est cruciale pour la clarté et l'organisation du code, car elle détermine les blocs de code à exécuter selon les conditions spécifiées.
 
 Dans cette fiche, on expliquera les différentes structures conditionnelles disponibles en Python et l'importance de l'indentation pour les rendre fonctionnelles. Cette approche est essentielle pour construire des programmes interactifs qui réagissent à des entrées ou des événements.
 
@@ -28,8 +28,8 @@ L'indentation en Python consiste à ajouter des espaces ou des tabulations au d�
 Exemple d'indentation correcte :
 
 ```python
-if x > 5:
-    print("x est plus grand que 5")
+if niveau_de_Pokemon > 50:
+    print("Ce Pokémon est prêt pour le combat !")
 ```
 
 ---
@@ -51,14 +51,14 @@ if condition:
 **Exemple :**
 
 ```python
-x = 10
+niveau_de_Pokemon = 70
 
-if x > 5:  # Si x est supérieur à 5
-    print("x est plus grand que 5")
+if niveau_de_Pokemon > 50:  # Si le niveau du Pokémon est supérieur à 50
+    print("Ce Pokémon est prêt pour le combat !")
 ```
 
 **Explication :**  
-Ici, la condition `x > 5` est vraie, donc l'instruction `print("x est plus grand que 5")` sera exécutée. Si `x` était inférieur ou égal à 5, rien ne se serait passé.
+Ici, la condition `niveau_de_Pokemon > 50` est vraie, donc l'instruction `print("Ce Pokémon est prêt pour le combat !")` sera exécutée. Si le niveau avait été inférieur ou égal à 50, rien ne se serait passé.
 
 ---
 
@@ -77,16 +77,16 @@ else:
 **Exemple :**
 
 ```python
-x = 10
+type_de_Pokemon = "Feu"
 
-if x > 12:  # Si x est supérieur à 12
-    print("x est plus grand que 12")
-else:       # Sinon
-    print("x est plus petit ou égal à 12")
+if type_de_Pokemon == "Eau":  # Si le Pokémon est de type Eau
+    print("Ce Pokémon est fort contre le Feu.")
+else:  # Sinon
+    print("Ce Pokémon n'est pas de type Eau.")
 ```
 
 **Explication :**  
-Ici, la condition `x > 12` est fausse, donc le bloc associé au `else` s'exécute, et le message "x est plus petit ou égal à 12" est affiché.
+Ici, la condition `type_de_Pokemon == "Eau"` est fausse, donc le bloc associé au `else` s'exécute, et le message "Ce Pokémon n'est pas de type Eau." est affiché.
 
 ---
 
@@ -107,18 +107,18 @@ else:
 **Exemple :**
 
 ```python
-x = 12
+puissance_attaque = 90
 
-if x > 12:  # 1ère condition
-    print("x est plus grand que 12")
-elif x == 12:  # 2ème condition
-    print("x est égal à 12")
+if puissance_attaque > 100:  # 1ère condition
+    print("Cette attaque est surpuissante !")
+elif puissance_attaque > 50:  # 2ème condition
+    print("Cette attaque est puissante.")
 else:
-    print("x est plus petit que 12")
+    print("Cette attaque est faible.")
 ```
 
 **Explication :**  
-Ici, la condition `x == 12` est vraie, donc la deuxième instruction `print("x est égal à 12")` est exécutée. Si `x` était plus grand que 12, la première condition aurait été vraie et le message correspondant aurait été affiché. Si aucune condition n’avait été vraie, le message du `else` aurait été affiché.
+Ici, la condition `puissance_attaque > 50` est vraie, donc la deuxième instruction `print("Cette attaque est puissante.")` est exécutée. Si la puissance avait été supérieure à 100, la première condition aurait été vraie et le message correspondant aurait été affiché. Si aucune condition n’avait été vraie, le message du `else` aurait été affiché.
 
 ---
 
@@ -127,7 +127,7 @@ Ici, la condition `x == 12` est vraie, donc la deuxième instruction `print("x e
 Les structures conditionnelles sont utilisées dans de nombreux cas en programmation. Par exemple :
 
 - **Vérification des entrées utilisateur :** Pour s'assurer que l'utilisateur a saisi des données valides.
-- **Traitement de données :** Pour appliquer des règles d'affaires et des filtres (par exemple, calculer des remises en fonction du montant d'achat).
+- **Traitement de données :** Pour appliquer des règles d'affaires et des filtres (par exemple, déterminer les Pokémons éligibles pour un tournoi).
 - **Gestion des erreurs :** Pour gérer les exceptions et prendre des décisions en fonction des erreurs rencontrées.
 
 ---
