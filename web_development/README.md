@@ -17,7 +17,7 @@ Cette section présente des ressources pour apprendre les bases et explorer les 
 
 - **[Web Scraping Introduction](./data/web_scraping_intro.md)**  
   Introduction au Web Scraping via Python
-- **[Scraper plusieurs pages](./data/web_scraping_multipages.md)**
+- **[Scraper plusieurs pages](./data/web_scraping_multipage.md)**
 
 Ces fiches visent à poser les bases du développement front-end pour ceux qui souhaitent apprendre à créer des pages web simples et bien structurées.
 
