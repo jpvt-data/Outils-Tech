@@ -1,4 +1,4 @@
-# Scraping de plusieurs pages web avec BeautifulSoup
+# Scraping de plusieurs pages web
 
 ## Introduction
 
