@@ -1,27 +1,10 @@
 [⬅ Retour à Python](../README.md)
 
-# Introduction à Python
-
-## Pourquoi utiliser Python ?
-
-Python est un langage de programmation populaire, particulièrement apprécié pour sa simplicité et sa puissance. Sa syntaxe claire et intuitive le rend idéal pour les débutants tout en étant suffisamment puissant pour des applications complexes. Python est largement utilisé dans des domaines variés comme la science des données, le développement web, l'automatisation, et bien d'autres. Apprendre à manipuler des variables est l'une des premières étapes pour explorer toutes les possibilités offertes par Python.
-
-## Les Caractéristiques de Python
-
-Python se distingue par plusieurs aspects :
-- **Simplicité** : Python est un langage facile à lire et à écrire, idéal pour les débutants.
-- **Langage interprété** : Le code est exécuté ligne par ligne, facilitant le débogage et le développement rapide.
-- **Typage dynamique** : Le type des variables est déterminé automatiquement par leur valeur.
-- **Portabilité** : Python fonctionne sur tous les principaux systèmes d'exploitation.
-- **Extensibilité** : Grâce à ses bibliothèques, Python permet de réaliser des projets de toutes tailles.
-
----
-
 # Variables & Types de données
 
 ## Introduction
 
-Les variables sont des éléments clés de tout langage de programmation. En Python, elles sont utilisées pour stocker des valeurs qui peuvent être manipulées tout au long du programme. Comprendre la déclaration, l’utilisation et la gestion des variables en Python est essentiel pour bien démarrer en programmation. Cette fiche explique de manière détaillée ce que sont les variables, comment les manipuler et les utiliser dans des situations courantes. 
+Les variables sont des éléments clés de tout langage de programmation. En Python, elles sont utilisées pour stocker des valeurs qui peuvent être manipulées tout au long du programme. Comprendre la déclaration, l’utilisation et la gestion des variables en Python est essentiel pour bien démarrer en programmation. Cette fiche explique de manière détaillée ce que sont les variables, comment les manipuler et les utiliser dans des situations courantes.
 
 Les variables permettent de rendre un programme flexible, car elles stockent des informations et permettent de les réutiliser ou de les modifier au besoin.
 
@@ -32,9 +15,9 @@ Une variable en Python est un espace mémoire qui contient une valeur. Cette val
 ### Types de Variables en Python
 
 Python prend en charge différents types de variables :
-- **int** : Entiers, par exemple 5, -3, 1000.
-- **float** : Nombres à virgule flottante, par exemple 3.14, -0.5, 2.0.
-- **str** : Chaînes de caractères, par exemple 'bonjour', "Python".
+- **int** : Entiers, par exemple 25 (nombre de Poké Balls), 150 (nombre de Pokémon capturés).
+- **float** : Nombres à virgule flottante, par exemple 1.5 (taille moyenne d’un Pikachu en mètres), 52.4 (poids d'un Onix en kg).
+- **str** : Chaînes de caractères, par exemple 'Bulbizarre', "Sacha".
 - **bool** : Valeurs booléennes, soit `True` (vrai), soit `False` (faux).
 
 ## Déclaration et Nommage des Variables
@@ -44,38 +27,38 @@ Python prend en charge différents types de variables :
 Pour déclarer une variable en Python, il suffit de lui assigner une valeur avec le symbole `=`. Par exemple :
 
 ```python
-age = 25
+niveau_pikachu = 25
 ```
 
-Ici, la variable `age` contient la valeur `25`.
+Ici, la variable `niveau_pikachu` contient la valeur `25`.
 
 ### Règles de Nommage
 
 En Python, il est recommandé d'utiliser la convention **snake_case** pour nommer les variables, c'est-à-dire de séparer les mots par des underscores (`_`) et d’utiliser uniquement des lettres minuscules. Par exemple :
-- `nom_utilisateur`
-- `salaire_annuel`
+- `nom_pokemon`
+- `points_experience`
 
 Il est important de noter que les noms de variables ne peuvent pas commencer par un chiffre et ne doivent pas être des mots réservés en Python, comme `int`, `str`, `print`, etc.
 
-## Exemple : Calcul du Salaire Mensuel
+## Exemple : Calcul de l'Expérience Moyenne par Pokémon
 
 Voici un exemple simple pour démontrer comment manipuler les variables en Python :
 
 ```python
 # Déclaration des variables
-salaire_annuel = 36000  # Le salaire annuel en euros
-nb_mois = 12            # Le nombre de mois dans une année
+experience_totale = 1250  # Expérience totale gagnée dans un combat
+nombre_pokemons = 5       # Nombre de Pokémon ayant participé au combat
 
-# Calcul du salaire mensuel
-salaire_mensuel = salaire_annuel / nb_mois
+# Calcul de l'expérience moyenne
+experience_moyenne = experience_totale / nombre_pokemons
 
-# Affichage du salaire mensuel
-print("Le salaire mensuel est de", salaire_mensuel, "euros.")
+# Affichage de l'expérience moyenne
+print("Chaque Pokémon a gagné", experience_moyenne, "points d’expérience.")
 ```
 
 ### Explication de l'exemple
-- **salaire_annuel** et **nb_mois** sont des variables de type `int` contenant respectivement le salaire annuel et le nombre de mois dans une année.
-- **salaire_mensuel** est calculé en divisant **salaire_annuel** par **nb_mois**.
+- **experience_totale** et **nombre_pokemons** sont des variables de type `int` contenant respectivement l’expérience totale gagnée et le nombre de Pokémon ayant participé.
+- **experience_moyenne** est calculée en divisant **experience_totale** par **nombre_pokemons**.
 - La fonction `print()` affiche le résultat.
 
 ## Vérifier le Type d'une Variable
@@ -83,16 +66,16 @@ print("Le salaire mensuel est de", salaire_mensuel, "euros.")
 Il peut être utile de vérifier le type d'une variable, surtout lorsqu'on manipule des données provenant de sources externes. La fonction `type()` permet de vérifier le type d'une variable. Par exemple :
 
 ```python
-salaire_annuel = 40000
-prenom = 'Lionel'
+nom_pokemon = 'Salamèche'
+taille_pokemon = 0.6
 
-print(type(salaire_annuel))  # Affiche <class 'int'>
-print(type(prenom))          # Affiche <class 'str'>
+print(type(nom_pokemon))  # Affiche <class 'str'>
+print(type(taille_pokemon))  # Affiche <class 'float'>
 ```
 
 ### Explication
-- `type(salaire_annuel)` renvoie `<class 'int'>`, indiquant que `salaire_annuel` est un entier.
-- `type(prenom)` renvoie `<class 'str'>`, indiquant que `prenom` est une chaîne de caractères.
+- `type(nom_pokemon)` renvoie `<class 'str'>`, indiquant que `nom_pokemon` est une chaîne de caractères.
+- `type(taille_pokemon)` renvoie `<class 'float'>`, indiquant que `taille_pokemon` est un nombre à virgule flottante.
 
 ## Changer le Type d'une Variable (Casting)
 
@@ -100,20 +83,20 @@ Parfois, il est nécessaire de convertir une variable d’un type à un autre. C
 
 ```python
 # Conversion d'une chaîne de caractères en entier
-age_str = "25"
-age_int = int(age_str)  # age_int devient un entier de valeur 25
+nombre_pokeballs_str = "10"
+nombre_pokeballs_int = int(nombre_pokeballs_str)  # nombre_pokeballs_int devient un entier de valeur 10
 ```
 
 Il est aussi possible de convertir des entiers en chaînes ou des nombres en flottants. Voici un exemple de conversion :
 
 ```python
 # Conversion d'un entier en chaîne
-salaire_annuel = 36000
-salaire_str = str(salaire_annuel)
+niveau_pikachu = 25
+niveau_str = str(niveau_pikachu)
 
 # Conversion d'un entier en flottant
-age_int = 30
-age_flottant = float(age_int)  # age_flottant devient 30.0
+pv_max = 50
+pv_flottant = float(pv_max)  # pv_flottant devient 50.0
 ```
 
 ### Explication du Casting
@@ -121,7 +104,7 @@ age_flottant = float(age_int)  # age_flottant devient 30.0
 - **str()** : Convertit n'importe quel type de variable en une chaîne de caractères.
 - **float()** : Convertit une chaîne ou un entier en un flottant.
 
-Il est important de noter que certaines conversions peuvent échouer, par exemple convertir une chaîne comme `"abc"` en entier entraînera une erreur.
+Il est important de noter que certaines conversions peuvent échouer, par exemple convertir une chaîne comme `"Bulbizarre"` en entier entraînera une erreur.
 
 ## Gérer les Entrées/Sorties
 
@@ -130,13 +113,13 @@ Il est important de noter que certaines conversions peuvent échouer, par exempl
 En Python, pour demander une entrée à l'utilisateur, on utilise la fonction `input()`. Elle permet de capturer une saisie clavier. Par exemple :
 
 ```python
-nom = input("Quel est ton nom ? ")
-print("Bonjour,", nom, "!")
+nom = input("Quel est le nom de ton Pokémon préféré ? ")
+print("Super choix !", nom, "est un excellent Pokémon !")
 ```
 
 ### Sortie Utilisateur
 
-Pour afficher des informations à l'utilisateur, on utilise la fonction `print()`. Par exemple, l'exemple ci-dessus affiche le message "Bonjour, [nom] !".
+Pour afficher des informations à l'utilisateur, on utilise la fonction `print()`. Par exemple, l'exemple ci-dessus affiche le message "Super choix ! [nom] est un excellent Pokémon !".
 
 ### Explication des Entrées/Sorties
 - **input()** : Capture une saisie clavier de l'utilisateur.
@@ -150,4 +133,5 @@ Comprendre les variables en Python et leur gestion est essentiel pour écrire de
 
 - [Python Documentation - Variables](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
 - [Python Type Conversion](https://www.w3schools.com/python/ref_func_int.asp)
-```
+
+
