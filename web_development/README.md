@@ -19,6 +19,11 @@ Cette section présente des ressources pour apprendre les bases et explorer les 
   Introduction au Web Scraping via Python
 - **[Scraper plusieurs pages](./data/web_scraping_multipage.md)**
 
+### Streamlit
+
+- **[Dossier Streamlit](./data/streamlit/README.md)**  
+  Tout pour créer un site interactif, vitrine professionnelle, présentation de dashboards, etc.
+
 Ces fiches visent à poser les bases du développement front-end pour ceux qui souhaitent apprendre à créer des pages web simples et bien structurées.
 
 
