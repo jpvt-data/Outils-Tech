@@ -27,7 +27,8 @@ Utiliser Streamlit pour créer des graphiques interactifs avec Matplotlib, Seabo
 ### 3. **[Fonctions Avancées](./data/streamlit_fonctions_avancees.md)**
 Explorer les fonctionnalités avancées de Streamlit, telles que la gestion des états, l'interactivité avec les données, l'intégration de visualisations complexes, et l'optimisation de l’application pour un meilleur rendu.
 
-### 4. **[Hébergement du site](./data/streamlit_vitrine_hebergement.md)**
+### 4. **[Création d'un site vitrine et hébergement](./data/streamlit_vitrine_hebergement.md)**  
+Création d'un site vitrine simple, de sa conception à son hébergement, avec exemples de pages et de métriques.
 
 ---
 
