@@ -1,19 +1,19 @@
-# Python - Boucles
+### Python - Les Boucles
 
 ## Introduction
 
-Les boucles sont des structures de contrôle très courantes en programmation, permettant de répéter un bloc d'instructions plusieurs fois. En Python, il existe principalement deux types de boucles : **while** et **for**. Ces boucles permettent d'exécuter des actions répétitives de manière concise et flexible. Cette fiche technique détaillée présente les différents types de boucles, leur fonctionnement, ainsi que des exemples concrets pour illustrer leur utilisation. Cette fiche s'adresse aux débutants et explique chaque concept pas à pas.
+Les boucles sont des structures de contrôle très courantes en programmation, permettant de répéter un bloc d'instructions plusieurs fois. En Python, il existe principalement deux types de boucles : **while** et **for**. Ces boucles permettent d'exécuter des actions répétitives de manière concise et flexible. Cette fiche technique détaillée présente les différents types de boucles, leur fonctionnement, ainsi que des exemples concrets pour illustrer leur utilisation.
 
 ---
 
 ## Sommaire
 
-1. Boucle conditionnelle `while` (tant que)
-2. Boucle itérative `for` (« pour tout... »)
-3. `break` et `continue`
-4. Les boucles imbriquées
-5. Ressources
-   
+1. Boucle conditionnelle `while` (tant que)  
+2. Boucle itérative `for` (« pour tout... »)  
+3. `break` et `continue`  
+4. Les boucles imbriquées  
+5. Ressources  
+
 ---
 
 ## 1. Boucle conditionnelle `while` (tant que)
@@ -35,43 +35,22 @@ while condition:
 ### Exemple
 
 ```python
-nombre = 0
+pokeballs = 5
 
-while nombre < 10:
-    nombre += 1  # incrémente de 1 à chaque itération
-    print(nombre)
+while pokeballs > 0:
+    print(f"J'ai lancé une Poké Ball ! Il m'en reste {pokeballs - 1}.")
+    pokeballs -= 1
 
-print('Fini !')
+print("Je n'ai plus de Poké Balls.")
 ```
 
 **Explication du code :**
-- La boucle commence par vérifier si la condition `nombre < 10` est vraie.
-- Si oui, elle exécute `nombre += 1`, ce qui augmente la valeur de `nombre` à chaque itération.
-- Lorsque `nombre` atteint 10, la condition devient fausse et la boucle se termine.
-- Enfin, le message `'Fini !'` est affiché.
+- La boucle commence par vérifier si `pokeballs > 0` est vrai.  
+- Si oui, elle affiche un message et décrémente `pokeballs`.  
+- Lorsque `pokeballs` atteint 0, la boucle se termine.  
 
 **Cas d'usage :**
-- Utiliser `while` lorsque le nombre d'itérations dépend d'une condition dynamique (ex. attente de l'entrée utilisateur, surveillance d'un état, etc.).
-
-### Piège à éviter : boucle jamais exécutée
-
-```python
-nombre = -1
-
-while nombre >= 0:
-    print("Rien ne s'affiche...")
-```
-
-- Ici, la condition `nombre >= 0` est fausse dès le début (car `nombre = -1`), ce qui empêche la boucle d’être exécutée.
-
-### Piège à éviter : boucle infinie
-
-```python
-while True:
-    print("Ce texte sera affiché encore et encore !")
-```
-
-- Cette boucle ne s'arrêtera jamais, car `True` est toujours vrai. Il est essentiel de prévoir une condition d'arrêt ou une instruction `break`.
+- Utiliser `while` lorsque le nombre d'itérations dépend d'une condition dynamique (ex. attraper des Pokémon jusqu'à manquer de Poké Balls).
 
 ---
 
@@ -89,21 +68,22 @@ for element in iterable:
     instruction_n
 ```
 
-- **element** : L'élément actuel dans l'itérable.
+- **element** : L'élément actuel dans l'itérable.  
 - **iterable** : Une séquence de valeurs (par exemple une liste, une chaîne, ou un objet généré par `range()`).
 
 ### Exemple
 
-Afficher les entiers entre 0 et 100 avec `for` :
+Lister les Pokémon capturés : 
 
 ```python
-for nombre in range(0, 101):
-    print(nombre)
+pokemon_captures = ["Pikachu", "Bulbizarre", "Salamèche", "Carapuce"]
+
+for pokemon in pokemon_captures:
+    print(f"J'ai capturé {pokemon} !")
 ```
 
 **Explication du code :**
-- La fonction `range(0, 101)` génère une séquence de nombres allant de 0 à 100 (le 101 est exclus).
-- Pour chaque nombre dans cette séquence, la boucle affiche sa valeur.
+- Pour chaque Pokémon de la liste `pokemon_captures`, la boucle affiche un message.  
 
 **Cas d'usage :**
 - Utiliser `for` pour itérer sur des objets avec un nombre d'éléments connu à l'avance.
@@ -119,28 +99,34 @@ Les instructions `break` et `continue` permettent de contrôler l'exécution des
 L'instruction `break` permet de sortir immédiatement de la boucle en cours, même si la condition n'est pas encore fausse.
 
 ```python
-for nombre in range(5):
-    if nombre == 3:
+pokemon_captures = ["Pikachu", "Bulbizarre", "Mewtwo", "Salamèche"]
+
+for pokemon in pokemon_captures:
+    if pokemon == "Mewtwo":
+        print("Mewtwo repéré, je me prépare pour un combat épique !")
         break
-    print(nombre)
+    print(f"{pokemon} capturé.")
 ```
 
 **Explication du code :**
-- La boucle s'arrête dès que `nombre == 3`, et les nombres 0, 1 et 2 sont affichés. Le `break` interrompt la boucle.
+- La boucle s'arrête dès que `pokemon` est `"Mewtwo"`.  
 
 ### `continue`
 
 L'instruction `continue` saute directement à l'itération suivante de la boucle sans exécuter les instructions restantes dans l'itération en cours.
 
 ```python
-for nombre in range(5):
-    if nombre == 3:
+pokemon_captures = ["Pikachu", "Bulbizarre", "Mewtwo", "Salamèche"]
+
+for pokemon in pokemon_captures:
+    if pokemon == "Mewtwo":
+        print("Mewtwo a fui, je le retrouverai plus tard...")
         continue
-    print(nombre)
+    print(f"{pokemon} capturé.")
 ```
 
 **Explication du code :**
-- Lorsque `nombre == 3`, l'instruction `continue` fait sauter l'affichage de ce nombre. Ainsi, la boucle affiche tous les nombres de 0 à 4 sauf 3.
+- Lorsque `pokemon` est `"Mewtwo"`, la boucle saute à l'itération suivante, sans afficher `"Mewtwo capturé."`.
 
 ---
 
@@ -151,34 +137,27 @@ Il est possible d'imbriquer des boucles les unes dans les autres. Chaque boucle 
 ### Exemple
 
 ```python
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print(j, end=' ')
-    print()  # Saut de ligne après chaque boucle interne
+types_pokemon = ["Feu", "Eau", "Plante"]
+pokemon_captures = ["Salamèche", "Carapuce", "Bulbizarre"]
+
+for type_pokemon in types_pokemon:
+    print(f"Pokémon de type {type_pokemon} disponibles :")
+    for pokemon in pokemon_captures:
+        print(f"- {pokemon}")
+    print()
 ```
 
 **Explication du code :**
-- La boucle extérieure fait varier `i` de 1 à 5.
-- La boucle intérieure, pour chaque valeur de `i`, affiche les nombres de 1 à `i`.
-
-Cela produit un affichage comme suit :
-
-```
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-```
+- La boucle extérieure parcourt les `types_pokemon`.  
+- La boucle intérieure liste les `pokemon_captures` pour chaque type.  
 
 ---
 
 ## 5. Ressources
 
-Pour approfondir les concepts des boucles, voici quelques ressources utiles :
-
-- [Les boucles en Python (vidéo)](https://youtu.be/x_Jeyvw7n9I)
-- [Boucles imbriquées en Python (vidéo)](https://youtu.be/94UHCEmprCY)
+Pour approfondir les concepts des boucles, voici quelques ressources utiles :  
+- [Les boucles en Python (vidéo)](https://youtu.be/x_Jeyvw7n9I)  
+- [Boucles imbriquées en Python (vidéo)](https://youtu.be/94UHCEmprCY)  
 
 ---
 
