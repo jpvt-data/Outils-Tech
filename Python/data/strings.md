@@ -1,4 +1,4 @@
-# Python - Manipulation des chaînes de caractères
+# Python - Strings : Manipuler les chaînes de caractères
 
 ## Introduction
 
@@ -23,10 +23,10 @@ Une chaîne de caractères est un ensemble de caractères contenus dans une vari
 ### Exemple :
 
 ```python
-chaine = "Bonjour, comment ça va ?"
+chaine = "Pikachu, Attrapez-les tous !"
 ```
 
-Dans cet exemple, `chaine` est une variable de type chaîne de caractères, contenant la phrase "Bonjour, comment ça va ?".
+Dans cet exemple, `chaine` est une variable de type chaîne de caractères, contenant la phrase "Pikachu, Attrapez-les tous !".
 
 ## Sélectionner des caractères dans une chaîne
 
@@ -35,16 +35,16 @@ Les chaînes en Python sont indexées, c'est-à-dire que chaque caractère poss�
 ### Indexation des caractères
 
 ```python
-s = "Python"
+s = "Bulbizarre"
 
 # Premier caractère
-print(s[0])  # P
+print(s[0])  # B
 
 # Dernier caractère (index négatif)
-print(s[-1])  # n
+print(s[-1])  # e
 
 # Accéder au troisième caractère
-print(s[2])  # t
+print(s[2])  # l
 ```
 
 ### Slicing (extraire une sous-chaîne)
@@ -53,19 +53,19 @@ Le slicing permet de sélectionner une portion de la chaîne en utilisant une sy
 
 ```python
 # Exemple de slicing
-s = "Python"
+s = "Bulbizarre"
 
 # Extraire les caractères entre l'indice 0 et 2 (inclus)
-print(s[0:3])  # Pyt
+print(s[0:3])  # Bul
 
 # Extraire depuis le début jusqu'à l'indice 3
-print(s[:4])  # Pyth
+print(s[:4])  # Bulb
 
 # Extraire depuis l'indice 2 jusqu'à la fin
-print(s[2:])  # thon
+print(s[2:])  # lbizarre
 
 # Extraire toute la chaîne
-print(s[:])  # Python
+print(s[:])  # Bulbizarre
 ```
 
 ## Les chaînes de caractères sont immuables
@@ -75,8 +75,8 @@ En Python, les chaînes de caractères sont immuables, ce qui signifie qu'une fo
 ### Exemple d'erreur :
 
 ```python
-s = "Bonjour"
-s[0] = "b"  # Erreur : TypeError
+s = "Salamèche"
+s[0] = "s"  # Erreur : TypeError
 ```
 
 Cependant, il est possible de créer une nouvelle chaîne en modifiant une partie de la chaîne initiale. Cela peut se faire avec des méthodes comme `.replace()`.
@@ -84,17 +84,17 @@ Cependant, il est possible de créer une nouvelle chaîne en modifiant une parti
 ### Exemple avec `.replace()` :
 
 ```python
-s = "Bonjour"
-nouvelle_s = s.replace("B", "b")
-print(nouvelle_s)  # bonjour
+s = "Salamèche"
+nouvelle_s = s.replace("S", "s")
+print(nouvelle_s)  # salamèche
 ```
 
-Ici, la méthode `.replace()` crée une nouvelle chaîne où toutes les occurrences de "B" sont remplacées par "b". La chaîne `s` reste inchangée.
+Ici, la méthode `.replace()` crée une nouvelle chaîne où toutes les occurrences de "S" sont remplacées par "s". La chaîne `s` reste inchangée.
 
 ## Quelques détails supplémentaires sur les chaînes
 
 - **Chaîne vide :** Une chaîne peut être vide, ce qui est représenté par `""`.
-  
+
   ```python
   chaine_vide = ""
   print(len(chaine_vide))  # 0
@@ -103,17 +103,17 @@ Ici, la méthode `.replace()` crée une nouvelle chaîne où toutes les occurren
 - **Concaténation de chaînes :** Les chaînes peuvent être combinées à l'aide de l'opérateur `+` :
 
   ```python
-  a = "Hello"
-  b = "World"
-  c = a + " " + b  # "Hello World"
+  a = "Carapuce"
+  b = "Roucool"
+  c = a + " et " + b  # "Carapuce et Roucool"
   print(c)
   ```
 
 - **Multiplication de chaînes :** Il est aussi possible de répéter une chaîne plusieurs fois avec l'opérateur `*` :
 
   ```python
-  a = "Python "
-  print(a * 3)  # Python Python Python 
+  a = "Pokémon "
+  print(a * 3)  # Pokémon Pokémon Pokémon
   ```
 
 ## Ressources supplémentaires
@@ -123,3 +123,4 @@ Pour aller plus loin dans la manipulation des chaînes de caractères en Python,
 - [Documentation officielle Python - Chaînes de caractères](https://docs.python.org/fr/3/tutorial/introduction.html#strings)
 - [Méthodes des chaînes en Python](https://python.developpez.com/faq/?page=String)
 - [Opérations courantes sur les chaînes](https://www.w3schools.com/python/python_strings.asp)
+
