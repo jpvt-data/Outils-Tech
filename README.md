@@ -16,7 +16,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 - **[Géolocalisation et Géocodage](./geocodage/geocodage.md)** 🌍 : Géocodage, géocodage inversé, cartographie avec Folium.
 - **[Machine Learning](./machine_learning/README.md)** 🤖 : Régression, classification, clustering, etc.
 - **Data Visualization** 📊 : Power BI, Matplotlib, Seaborn. 
-- **[Développement Web](./web_development)** 🌍 : HTML, CSS, Streamlit, Web Scraping et création de sites web interactifs.
+- **[Développement Web](./web_development/README.md)** 🌍 : HTML, CSS, Streamlit, Web Scraping et création de sites web interactifs.
 
 Les fiches sont organisées par thème pour une navigation facile. Vous pouvez consulter les fichiers `.md` pour chaque sujet 💡.
 
