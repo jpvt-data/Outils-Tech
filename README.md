@@ -17,7 +17,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 - **[Machine Learning](./machine_learning/README.md)** 🤖 : Régression, classification, clustering, etc.
 - **Data Visualization** 📊 : Power BI, Matplotlib, Seaborn. 
 - **[Streamlit](./Streamlit) 🌐 :** Création d'applications interactives pour la data visualization.
-- **[Développement Web](./web_development)** 🌍 : HTML, CSS, et introduction à la création de sites web interactifs.
+- **[Développement Web](./web_development)** 🌍 : HTML, CSS, Web Scraping et introduction à la création de sites web interactifs.
 
 Les fiches sont organisées par thème pour une navigation facile. Vous pouvez consulter les fichiers `.md` pour chaque sujet 💡.
 
