@@ -19,6 +19,8 @@ Cette section présente des ressources pour apprendre les bases et explorer les 
   Introduction au Web Scraping via Python
 - **[Scraper plusieurs pages](./data/web_scraping_multipage.md)**
   Scraper plusieurs pages web avec Python et BeautifulSoup pour collecter efficacement des données.
+- **[Crawling d'une page pweb](./data/web_scraping_crawling.md)**
+  Parcourir une page web recueillir et scraper les liens qu'elle contient.
 
 ### Streamlit
 
