@@ -1,134 +1,148 @@
-# Fiche Technique : Web Scraping - Crawling
+# Web Scraping : Crawling
 
 ## Sommaire
 
-1. Introduction : Comprendre le crawling
-2. Étapes clés du crawling
-3. Exemple pratique : Extraction des informations des Pokémon
+1. Introduction : qu'est-ce que le crawling ?
+2. Les grandes étapes
+3. Application technique
    - Récupération des URL
-   - Scraping de niveau 2 : Extraction de détails
-   - Application à l'ensemble des données
-
-## Introduction : Comprendre le crawling
-
-Le crawling consiste à parcourir une ou plusieurs pages web pour extraire des données structurées. Contrairement au scraping classique qui se concentre sur une seule page, le crawling explore également les liens contenus dans ces pages pour collecter des données supplémentaires. 
-
-### Applications
-
-- Indexation de sites web par les moteurs de recherche.
-- Extraction d'informations détaillées à partir de bases interconnectées (exemple : données produits sur des e-commerces).
-- Analyse des réseaux sociaux ou communautés en ligne pour comprendre les connexions.
-
-## Étapes clés du crawling
-
-Le processus de crawling suit deux grandes étapes :
-
-| Étape                  | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| Récupération des URL   | Identifier les liens intéressants à partir d'une page initiale.            |
-| Scraping des pages     | Collecter les données nécessaires à partir des pages référencées.          |
-
-Il est essentiel de choisir un format structuré pour stocker les résultats : tableaux (DataFrames), dictionnaires ou JSON.
+   - Extraction des données : exemples concrets
+   - Application à une liste d'éléments
+4. Challenge
+5. Conclusion
 
 ---
 
-## Exemple pratique : Extraction des informations des Pokémon
+## 1. Introduction : qu'est-ce que le crawling ?
 
-Objectif : Récupérer les noms et types des Pokémon depuis Poképédia, puis explorer les pages de chaque Pokémon pour collecter leurs statistiques détaillées (attaque, défense, etc.).
+Le crawling est une technique de web scraping permettant de parcourir une page web pour collecter les liens qu'elle contient. Ensuite, ces liens sont à leur tour explorés pour extraire des informations d'intérêt. Ce processus permet de naviguer en profondeur dans une structure web pour récupérer des données organisées.
 
-### Bibliothèques nécessaires
+### Contexte d'utilisation
+
+Le crawling est utile dans des cas tels que :
+
+- La collecte d'informations à partir de listes ou de catalogues.
+- L'extraction automatique de données découpées en plusieurs niveaux (comme des catégories et sous-catégories).
+- L'analyse de grandes quantités de pages web reliées entre elles.
+
+Dans cette fiche, un exemple concret est proposé pour récupérer des informations sur les Pokémon à partir de [Poképédia](https://www.pokepedia.fr).
+
+---
+
+## 2. Les grandes étapes
+
+1. Faire du scraping sur une page principale pour extraire les URLs.
+2. Parcourir chaque URL pour collecter les données associées.
+3. Organiser les données dans une structure tabulaire (par exemple, un DataFrame).
+
+La difficulté principale réside dans la gestion des éléments intermédiaires, tels que les URLs et les données extraites. Le format JSON ou un DataFrame peut être utilisé.
+
+---
+
+## 3. Application technique
+
+### Récupération des URL
+
+**Objectif :** Extraire les liens des Pokémon dans l'ordre du Pokédex.
+
 ```python
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 import pandas as pd
-```
 
-### 1. Récupération des URL
-
-Utilisation de la page listant les Pokémon pour extraire les liens vers leurs fiches individuelles.
-
-```python
-# URL de la page principale
-url = "https://www.pokepedia.fr/Liste_des_Pok%C3%A9mon_par_num%C3%A9ro"
+# URL cible
+url_principale = "https://www.pokepedia.fr/Liste_des_Pok%C3%A9mon_dans_l%27ordre_du_Pok%C3%A9dex_National"
 
 # Requête HTTP
-html = requests.get(url)
-
-# Analyse avec BeautifulSoup
+html = requests.get(url_principale)
 soup = BeautifulSoup(html.text, 'html.parser')
 
-# Extraction des liens des Pokémon
-table_pokemon = soup.find("table", {"class": "tableaustandard sortable"})
-links = table_pokemon.find_all("a")
+# Extraction des liens
+bloc_table = soup.find("table", {"class": "tableaustandard"})
+liens = bloc_table.find_all("a")
 
-# Stockage dans un DataFrame
-data = {
-    "nom": [link.text for link in links],
-    "url": ["https://www.pokepedia.fr" + link["href"] for link in links]
-}
-df_pokemon = pd.DataFrame(data)
-print(df_pokemon.head())
+# Création d'un DataFrame
+urls_pokemon = pd.DataFrame({
+    "nom": [lien.text for lien in liens],
+    "lien": ["https://www.pokepedia.fr" + lien["href"] for lien in liens]
+})
+
+print(urls_pokemon.head())
 ```
 
-### 2. Scraping de niveau 2 : Extraction de détails
+### Extraction des données : exemples concrets
 
-Création d'une fonction pour aller sur chaque fiche et récupérer les statistiques des Pokémon.
+**Objectif :** Récupérer le type principal de chaque Pokémon à partir de sa page.
 
 ```python
-# Fonction pour crawler une fiche Pokémon
-def extraire_statistiques(url):
+def extraire_type(url):
+    """Fonction pour extraire le type principal d'un Pokémon."""
+    html = requests.get(url)
+    soup = BeautifulSoup(html.text, 'html.parser')
+
+    # Localisation du bloc contenant le type principal
+    bloc_type = soup.find("table", {"class": "tableaustandard"})
     try:
-        # Requête HTTP
-        html = requests.get(url)
-        soup = BeautifulSoup(html.text, 'html.parser')
+        type_principal = bloc_type.find("a").text
+    except AttributeError:
+        type_principal = "Inconnu"
+    
+    return type_principal
 
-        # Recherche des statistiques
-        stats_table = soup.find("table", {"class": "tableaustandard"})
-        stats = stats_table.find_all("td")
-
-        # Extraction des valeurs
-        attaque = int(stats[1].text.strip())
-        defense = int(stats[2].text.strip())
-
-        return attaque, defense
-    except Exception as e:
-        return None, None
-
-# Test sur un lien
-print(extraire_statistiques(df_pokemon.iloc[0]["url"]))
+# Test sur un exemple
+url_exemple = urls_pokemon["lien"].iloc[0]
+print(extraire_type(url_exemple))
 ```
 
-### 3. Application à l'ensemble des données
+### Application à une liste d'éléments
 
-Application de la fonction sur tous les liens et ajout des statistiques dans le DataFrame.
-
-```python
-# Ajout des colonnes statistiques
-df_pokemon["attaque"], df_pokemon["defense"] = zip(*df_pokemon["url"].apply(extraire_statistiques))
-
-# Affichage des données complètes
-print(df_pokemon.head())
-```
-
-### Analyse
-
-Calculer des statistiques globales, comme la moyenne des attaques et défenses :
+**Objectif :** Appliquer la fonction à tous les Pokémon et organiser les résultats dans un tableau.
 
 ```python
-moyenne_attaque = df_pokemon["attaque"].mean()
-moyenne_defense = df_pokemon["defense"].mean()
+# Extraction des types pour chaque Pokémon
+urls_pokemon["type_principal"] = urls_pokemon["lien"].apply(extraire_type)
 
-print(f"Moyenne d'attaque : {moyenne_attaque}")
-print(f"Moyenne de défense : {moyenne_defense}")
+# Aperçu des données
+print(urls_pokemon.head())
 ```
 
 ---
 
-## Conclusion
+## 4. Challenge
 
-Le crawling permet d'explorer et d'extraire des données à grande échelle de manière automatisée. Dans cet exemple, les données des Pokémon ont été structurées et analysées avec succès, mais ce processus peut être adapté à d'autres types de bases interconnectées.
+Modifier le script pour extraire d'autres informations, comme les statistiques de base (PV, Attaque, etc.) ou la génération à laquelle appartient chaque Pokémon.
 
-### Ressources
+### Exemple d'extraction des PV
 
-- [Documentation BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+```python
+def extraire_pv(url):
+    """Fonction pour extraire les PV d'un Pokémon."""
+    html = requests.get(url)
+    soup = BeautifulSoup(html.text, 'html.parser')
+
+    # Localisation des PV
+    try:
+        bloc_stats = soup.find("table", {"class": "tableaustandard"})
+        pv = bloc_stats.find_all("td")[1].text.strip()
+    except (AttributeError, IndexError):
+        pv = "Inconnu"
+
+    return pv
+
+# Ajout des PV au tableau
+urls_pokemon["pv"] = urls_pokemon["lien"].apply(extraire_pv)
+
+print(urls_pokemon.head())
+```
+
+---
+
+## 5. Conclusion
+
+Le crawling permet d'extraire des informations structurées à partir de sources web hiérarchiques. Avec des outils comme BeautifulSoup et Pandas, il est possible d'organiser les données efficacement et de les analyser. Ce processus est essentiel pour créer des datasets à partir de pages web complexes. Pour aller plus loin, explorer l'utilisation de bibliothèques comme Scrapy pour un crawling à grande échelle.
+
+### Ressources utiles
+
+- [Documentation BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [Poképédia](https://www.pokepedia.fr)
+- [Tutoriel Pandas](https://pandas.pydata.org/docs/getting_started/index.html)
