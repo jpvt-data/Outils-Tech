@@ -21,7 +21,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Listes](./data/listes.md)
 - [Dictionnaires](./data/dictionnaires.md)
 - [Tuples](.data/tuples.md)
-- [Commenter son code](./data/commenter.md)
+
 
 ### 2. Manipulation de données
 - [Introduction à Pandas](./data/pandas_cheat_sheet.md)
@@ -35,6 +35,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Création de visualisations avec Seaborn](./data/seaborn_cheat_sheet.md)
 
 ### 5. Divers
+- [Commenter son code](./data/commenter.md)
 - [Gestion des erreurs et exceptions](./data/error_handling.md)
 - [Compréhensions de listes](./data/list_comprehensions.md)
 - [Validation des données - Pydantic](./data/pydantic.md)
