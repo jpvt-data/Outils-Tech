@@ -130,5 +130,5 @@ Le crawling permet d'explorer et d'extraire des données à grande échelle de m
 
 ### Ressources
 
-- Documentation BeautifulSoup : https://www.crummy.com/software/BeautifulSoup/
-- Poképédia : https://www.pokepedia.fr
+- [Documentation BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+- [Poképédia](https://www.pokepedia.fr)
