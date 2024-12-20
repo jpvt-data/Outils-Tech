@@ -20,6 +20,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Strings - Chaines de caractères](./data/strings.md)
 - [Listes](./data/listes.md)
 - [Dictionnaires](./data/dictionnaires.md)
+- [Tuples](.data/tuples.md)
 - [Commenter son code](./data/commenter.md)
 
 ### 2. Manipulation de données
