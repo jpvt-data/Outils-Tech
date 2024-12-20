@@ -8,7 +8,8 @@ SQL (Structured Query Language) est un langage essentiel pour interagir avec des
 2. **[Récupération d'informations](./data/sql_select_manip.md)**
 3. **[Manipulation de données](./data/sql_manip_donnees.md)**
 4. **[Modélisation (Méthode Merise)](./data/modelisation_merise.md)**
-5. Fonctions d'agrégation
-6. Gestion des données
-7. Relations entre tables
-8. Optimisation et bonnes pratiques
+5. **[Les Jointures](./data/sql_jointures.md)**
+6. Fonctions d'agrégation
+7. Gestion des données
+8. Relations entre tables
+9. Optimisation et bonnes pratiques
