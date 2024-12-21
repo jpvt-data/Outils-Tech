@@ -1,6 +1,6 @@
 [⬅ Retour à Python](../README.md)
 
-# Gestion des exceptions en Python
+# Gestion des erreurs
 
 ## Introduction
 Lors du développement en Python, il est courant de rencontrer des erreurs. Ces erreurs, appelées "exceptions", peuvent survenir à différents moments et dans divers contextes. L'objectif de cette fiche technique est de présenter comment gérer ces erreurs de manière efficace afin de maintenir la stabilité du programme. Cela permet de prévenir les interruptions brutales et d'offrir une gestion fluide des erreurs dans les scripts.
