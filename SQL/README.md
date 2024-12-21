@@ -11,7 +11,7 @@ SQL (Structured Query Language) est un langage essentiel pour interagir avec des
       - **[Les Jointures](./data/sql_jointures.md)**
       - **[Group By](./data/sql_group_by.md)**
 5. **[Sous-requêtes et Vues](./data/sql_sous_requetes_vues.md)**
-6. **[Requêtes Avancées](./data/requetes_avancees.md)**
+6. **[Requêtes Avancées](./data/sql_requetes_avancees.md)**
 7. Fonctions d'agrégation
 8. Gestion des données
 9. Relations entre tables
