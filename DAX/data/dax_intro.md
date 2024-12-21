@@ -1,4 +1,4 @@
-# Introduction à DAX (Data Analysis Expressions)
+# Introduction à DAX
 
 DAX (Data Analysis Expressions) est un langage de formules développé par Microsoft pour effectuer des calculs sur des données dans Power BI. Il permet de créer des mesures et des colonnes calculées afin d'analyser et de manipuler les données dans des rapports dynamiques. DAX est un outil essentiel pour transformer des données brutes en informations pertinentes, en tirant parti de la modélisation des données.
 
