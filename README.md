@@ -12,6 +12,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 ## Outils et concepts couverts :
 - **[Python](./Python/README.md)** 🐍 : Fiches sur Pandas, NumPy, Regex, etc.
 - **[SQL](./SQL/README.md)** 🗃️ : Requêtes de base, jointures, sous-requêtes, etc.
+- **[Langage DAX](./DAX/README.md)** : Langage formulé de Microsoft pour la manipulation et l'analyse de données dans PowerBI.
 - **[JSON & API](./json_api/README.md)** 🌐 : Manipulation de JSON et intégration avec les API REST via Python.
 - **[Géolocalisation et Géocodage](./geocodage/geocodage.md)** 🌍 : Géocodage, géocodage inversé, cartographie avec Folium.
 - **[Machine Learning](./machine_learning/README.md)** 🤖 : Régression, classification, clustering, etc.
