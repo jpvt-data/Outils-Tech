@@ -1,4 +1,4 @@
-# DAX - Introduction
+# DAX -  Data Analysis eXpressions
 
 Bienvenue dans le chapitre dédié à **DAX (Data Analysis Expressions)**, un langage de formules utilisé dans Power BI pour effectuer des calculs sur des données. Ce chapitre vise à vous fournir une compréhension claire des concepts fondamentaux de DAX, ainsi que des exemples concrets pour vous aider à appliquer ces connaissances dans vos propres analyses.
 
