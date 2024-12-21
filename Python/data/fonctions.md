@@ -1,18 +1,28 @@
-# Introduction aux Fonctions en Python
+# **Python - Les Fonctions**
 
-## Contexte et Objectif
+## **Contexte et Objectif**
 
-Les fonctions en Python permettent de structurer et de simplifier un programme en encapsulant des blocs de code réutilisables. Elles sont essentielles pour éviter la répétition de code, faciliter la maintenance et rendre le code plus lisible. Cette fiche technique explique de manière détaillée ce qu’est une fonction, comment la définir, l'utiliser, et ce qui se passe à l'intérieur de ces fonctions.
+Les fonctions en Python permettent de structurer un programme en organisant le code en blocs réutilisables. Cela aide non seulement à éviter la répétition du code, mais aussi à le rendre plus lisible et plus facile à maintenir. Dans cette fiche, nous explorerons en détail ce que sont les fonctions, comment les définir et les utiliser, et comment gérer les différents types de paramètres et de valeurs retournées.
 
-## Définition d’une Fonction
+---
 
-Une fonction est un ensemble d’instructions regroupées sous un nom. Ce nom permet de réutiliser le bloc de code défini dans la fonction à tout moment dans un programme, avec différents arguments ou paramètres.
+## **1. Définition d’une Fonction**
 
-### Structure de base d'une fonction
+Une fonction est un bloc de code qui accomplit une tâche spécifique et qui peut être réutilisé plusieurs fois dans un programme. Elle peut accepter des **paramètres** (ou arguments) pour personnaliser son comportement, et renvoyer une **valeur** grâce au mot-clé `return`.
 
-La structure d’une fonction commence par le mot-clé `def`, suivi du nom de la fonction, de parenthèses contenant des paramètres (optionnels) et enfin, d'un bloc d'instructions indenté qui détermine l’action que la fonction va réaliser.
+### **Structure de Base d’une Fonction**
 
-### Exemple simple : Calcul de la somme de trois nombres
+Une fonction en Python est définie à l’aide du mot-clé `def`, suivi du nom de la fonction, des parenthèses (qui peuvent contenir des paramètres), et d’un bloc d’instructions indentées.
+
+```python
+def nom_de_fonction(parametre_1, parametre_2):
+    # Instructions à exécuter
+    return valeur
+```
+
+### **Exemple Simple : Calcul de la somme de trois nombres**
+
+Voici un exemple de fonction qui prend trois paramètres et retourne leur somme :
 
 ```python
 def somme(coup_1, coup_2, coup_3):
@@ -20,32 +30,43 @@ def somme(coup_1, coup_2, coup_3):
     return total
 ```
 
-Ici, la fonction `somme` prend trois paramètres (`coup_1`, `coup_2`, `coup_3`) et retourne la somme de ces trois valeurs.
+### **Appel de la Fonction**
 
-### Utilisation de la fonction
+L’appel d’une fonction se fait en utilisant son nom suivi de parenthèses contenant les arguments que l’on souhaite passer à la fonction.
 
 ```python
 resultat = somme(5, 3, 7)
 print(resultat)  # Affiche 15
 ```
 
-Ce code appelle la fonction `somme` avec les arguments 5, 3, et 7. Le résultat retourné est 15.
+#### **Explication :**
+- **`def`** : Mot-clé utilisé pour définir une fonction.
+- **`somme`** : Nom de la fonction.
+- **`coup_1, coup_2, coup_3`** : Paramètres de la fonction, qui seront utilisés comme variables locales dans la fonction.
+- **`return`** : Retourne la valeur calculée à l'appelant (ici, la somme des trois nombres).
 
-#### Explication
+---
 
-- `def` est utilisé pour définir la fonction.
-- `somme` est le nom de la fonction.
-- `(coup_1, coup_2, coup_3)` sont les paramètres, ils permettent de passer des valeurs à la fonction.
-- `return` permet de renvoyer une valeur calculée par la fonction.
+## **2. Paramètres et Arguments**
 
-### Paramètres et Arguments
+### **Paramètres**
+Les paramètres sont des variables dans la définition de la fonction. Ils sont utilisés pour recevoir les valeurs (ou arguments) lors de l'appel de la fonction.
 
-- **Paramètres** : Ce sont les variables qui apparaissent dans la définition de la fonction (ici `coup_1`, `coup_2`, `coup_3`).
-- **Arguments** : Ce sont les valeurs réelles que l'on passe à la fonction lorsque l'on l'appelle (ici 5, 3, et 7).
+### **Arguments**
+Les arguments sont les valeurs que vous passez à la fonction lorsqu'elle est appelée. Le nombre d'arguments doit correspondre au nombre de paramètres définis.
 
-**Important** : Le nombre d'arguments que l'on passe à la fonction doit correspondre au nombre de paramètres définis.
+```python
+# Paramètres : a, b
+def addition(a, b):
+    return a + b
 
-### Exemple avec conditions
+# Arguments : 3, 5
+resultat = addition(3, 5)  # Résultat = 8
+```
+
+### **Exemple avec des conditions**
+
+Vous pouvez aussi ajouter des conditions dans une fonction pour effectuer différentes actions selon les valeurs des arguments.
 
 ```python
 def lancer_de(coup_1, coup_2, coup_3):
@@ -58,48 +79,111 @@ def lancer_de(coup_1, coup_2, coup_3):
         return "Incroyable !"
 ```
 
-### Appel de la fonction avec des arguments
-
 ```python
 resultat = lancer_de(4, 3, 2)
 print(resultat)  # Affiche "Bon coup"
 ```
 
-Ici, la fonction retourne `"Bon coup"` car la somme des trois valeurs est 9.
+#### **Explication :**
+La fonction `lancer_de` vérifie la somme des trois arguments et retourne un message en fonction de la valeur totale. Si le total est inférieur à 8, le message sera "Mauvais coup", entre 8 et 12 : "Bon coup", et au-dessus de 13 : "Incroyable !".
 
-#### Explication
+---
 
-- La fonction `lancer_de` vérifie si la somme des trois coups est inférieure à 8, entre 8 et 13, ou supérieure à 13, puis renvoie un message approprié.
+## **3. Fonctions sans Paramètres**
 
-## Fonction sans Paramètres
+Il est possible de définir une fonction qui ne prend pas de paramètres. Dans ce cas, la fonction ne reçoit aucune donnée à son appel.
 
-Une fonction peut également être définie sans paramètres. Dans ce cas, elle ne reçoit aucune donnée d'entrée lors de son appel.
-
-### Exemple de fonction sans paramètres
+### **Exemple : Fonction sans paramètres**
 
 ```python
 def saluer():
     return "Bonjour, bienvenue dans le monde des Pokémon !"
 ```
 
-### Appel de la fonction sans paramètres
+### **Appel de la fonction sans paramètres**
 
 ```python
 message = saluer()
 print(message)  # Affiche "Bonjour, bienvenue dans le monde des Pokémon !"
 ```
 
-#### Explication
+---
 
-La fonction `saluer` ne prend pas de paramètres, mais renvoie un message de salutation.
+## **4. Fonctions avec Valeur par Défaut**
 
-## Utilisation des Fonctions dans un Contexte plus Large
+Une fonction peut avoir des paramètres avec des **valeurs par défaut**. Cela signifie que si un argument n'est pas fourni lors de l'appel, la valeur par défaut est utilisée.
 
-Les fonctions peuvent être utilisées de manière répétée dans un programme plus complexe pour accomplir des tâches variées. Par exemple, dans le cadre d’un jeu où l’on lance des dés, chaque joueur peut effectuer plusieurs lancers et obtenir un score.
+### **Exemple : Valeur par défaut**
 
-### Exemple : Compter les joueurs qualifiés dans un jeu
+```python
+def salut(message="Bonjour tout le monde !"):
+    return message
+```
 
-Imaginons un tournoi où les participants lancent trois dés. Si leur total est supérieur à 12, ils sont qualifiés pour la finale.
+### **Appel avec et sans argument**
+
+```python
+print(salut())  # Affiche "Bonjour tout le monde !"
+print(salut("Salut, Python !"))  # Affiche "Salut, Python !"
+```
+
+---
+
+## **5. Fonctions avec Nombre Variable de Paramètres**
+
+En Python, il est aussi possible de définir une fonction qui accepte un nombre variable d'arguments à l'aide de l'astérisque (`*`) pour les arguments positionnels et du double astérisque (`**`) pour les arguments nommés.
+
+### **Exemple avec `*args` (Arguments positionnels)**
+
+```python
+def addition_multiple(*args):
+    return sum(args)
+```
+
+```python
+print(addition_multiple(1, 2, 3))  # Affiche 6
+print(addition_multiple(5, 7, 2, 8))  # Affiche 22
+```
+
+### **Exemple avec `**kwargs` (Arguments nommés)**
+
+```python
+def afficher_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+```
+
+```python
+afficher_info(nom="Pikachu", type="Électrique")  # Affiche "nom: Pikachu" et "type: Électrique"
+```
+
+---
+
+## **6. Retourner Plusieurs Valeurs**
+
+Une fonction peut également retourner plusieurs valeurs en les séparant par des virgules. Python les renvoie sous forme de tuple.
+
+### **Exemple : Retour de plusieurs valeurs**
+
+```python
+def calcul(a, b):
+    somme = a + b
+    difference = a - b
+    return somme, difference
+```
+
+```python
+resultat = calcul(10, 5)
+print(resultat)  # Affiche (15, 5)
+```
+
+---
+
+## **7. Fonctions dans un Contexte Pratique**
+
+Les fonctions peuvent être utilisées de manière répétée dans des programmes plus complexes pour accomplir diverses tâches. Prenons l'exemple d'un jeu où les participants lancent trois dés. Si leur total est supérieur à 12, ils sont qualifiés pour la finale.
+
+### **Exemple : Compter les joueurs qualifiés**
 
 ```python
 import random
@@ -126,21 +210,13 @@ for i in range(32):  # 32 joueurs
 print(f"Nombre de joueurs qualifiés : {joueurs_qualifies}")
 ```
 
-### Résultat attendu
+---
 
-```python
-Nombre de joueurs qualifiés : 7
-```
+## **Conclusion**
 
-#### Explication
+Les fonctions sont essentielles pour structurer et simplifier un programme Python. Elles permettent de rendre le code plus lisible, réutilisable et plus facile à maintenir. Que ce soit pour des calculs simples ou des opérations complexes, les fonctions vous aideront à rendre votre code plus modulaire et plus efficace. Grâce aux concepts de paramètres, d'arguments, de valeurs par défaut, et de nombre variable d'arguments, vous pouvez définir des fonctions puissantes et flexibles qui s'adaptent à vos besoins spécifiques.
 
-- `random.randint(1, 6)` génère un nombre aléatoire entre 1 et 6, simulant un lancer de dé.
-- La fonction `lancer_de` est appelée pour chaque joueur avec trois valeurs aléatoires.
-- Si le résultat est `"Incroyable !"`, cela signifie que le joueur a obtenu un total supérieur à 12 et est qualifié pour la finale.
-
-## Conclusion
-
-Les fonctions permettent de rendre un programme plus modulaire et réutilisable. Elles sont essentielles pour éviter la duplication du code et pour structurer de manière plus claire les opérations complexes. Dans ce contexte, une fonction renvoie des valeurs qui peuvent être utilisées à différents endroits du programme, rendant le développement plus efficace et moins sujet aux erreurs.
+---
 
 ## Liens Utiles
 
