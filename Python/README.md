@@ -23,6 +23,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 - [Tuples](.data/tuples.md)
 - [Sets](./data/sets.md)
 - [Fonctions](./data/fonctions.md)
+- [Modules](./data/modules.md)
 
 
 ### 2. Manipulation de données
