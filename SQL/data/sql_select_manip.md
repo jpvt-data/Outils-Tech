@@ -182,6 +182,3 @@ Les commandes SQL `SELECT`, `WHERE`, `ORDER BY`, et `LIMIT` sont essentielles po
 - [Tutoriel sur ORDER BY](https://sql.sh/cours/order-by)
 - [Tutoriel sur LIMIT et OFFSET](https://sql.sh/cours/limit)
 
----
-
-Cette fiche peut être directement copiée et utilisée dans un fichier Markdown pour être intégrée dans ton dépôt GitHub !
