@@ -6,7 +6,7 @@ DAX est un outil puissant pour exploiter la richesse de vos données dans Power 
 
 ## Sommaire
 
-- **[Introduction à DAX](./data/DAX_intro.md)**
+- **[Introduction à DAX](./data/dax_intro.md)**
 - 
 
 ## Ressources supplémentaires
