@@ -1,4 +1,4 @@
-# Manipulation de données dans une base de données SQL
+# Récupérer des informations dans une base de données
 
 ## Introduction
 
