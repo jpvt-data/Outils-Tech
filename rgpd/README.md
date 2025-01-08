@@ -6,7 +6,7 @@ Ce dossier **"RGPD et Conformité"** regroupe des fiches techniques détaillées
 
 ## Contenu du dossier
 
-### [1. Introduction au RGPD](./rgpd/intro_rgpd.md)
+### [1. Introduction au RGPD](./intro_rgpd.md)
 - **Qu'est-ce que le RGPD ?** : Concepts clés (données personnelles, traitement, finalité), contexte juridique et importance pour les organisations.
 
 ### 2. Principes fondamentaux du RGPD
