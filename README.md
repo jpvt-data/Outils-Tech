@@ -18,7 +18,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 - **[Machine Learning](./machine_learning/README.md)** 🤖 : Régression, classification, clustering, etc.
 - **Data Visualization** 📊 : Power BI, Matplotlib, Seaborn. 
 - **[Développement Web](./web_development/README.md)** 🌍 : HTML, CSS, Streamlit, Web Scraping et création de sites web interactifs.
-- **[RGPD & Conformité](./rgpd/README.md)** 📜 : Principes fondamentaux, obligations légales et bonnes pratiques pour le traitement des données personnelles 
+- **[RGPD & Conformité](./rgpd/intro_rgpd.md)** 📜 : Principes fondamentaux, obligations légales et bonnes pratiques pour le traitement des données personnelles 
 
 Les fiches sont organisées par thème pour une navigation facile. Vous pouvez consulter les fichiers `.md` pour chaque sujet 💡.
 
