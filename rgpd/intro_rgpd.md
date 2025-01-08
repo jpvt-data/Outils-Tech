@@ -1,4 +1,4 @@
-[⬅ Page Précédente](./README.md)
+[⬅ Retour à Outils-Tech](../README.md)
 
 # Introduction au RGPD
 
@@ -79,4 +79,4 @@ Le RGPD est un cadre essentiel pour assurer la sécurité et la confidentialité
 - [Le MOOC de la CNIL sur le RGPD](https://cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie)
 - [Guide pratique sur le RGPD par la CNIL](https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on)
 
-[⬅ Page Précédente](./README.md)
+[⬅ Retour à Outils-Tech](../README.md)
