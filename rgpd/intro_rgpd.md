@@ -86,7 +86,3 @@ Le RGPD est un cadre essentiel pour assurer la sécurité et la confidentialité
 - [Guide pratique sur le RGPD par la CNIL](https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on)
 
 [⬅ Page Précédente](./README.md)
-
----
-
-Cette fiche peut être utilisée pour s'assurer de la conformité des traitements de données personnelles dans un environnement de travail ou dans des projets professionnels liés à la Data. Elle donne les bases essentielles du RGPD pour mieux comprendre son importance dans le traitement des informations personnelles.
