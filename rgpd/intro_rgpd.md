@@ -31,9 +31,6 @@ Une donnée personnelle est toute information qui permet d'identifier directemen
 **Exemple concret :**  
 Si une base de données contient uniquement un identifiant client et un numéro de téléphone, ces informations peuvent être utilisées pour retrouver une personne si elles sont croisées avec d'autres données (ex : adresse de livraison). Cela en fait une donnée personnelle.
 
-### Exemple dans le contexte Pokémon :
-Une base de données contenant des informations telles que le nom du dresseur, son ID de joueur et les Pokémon qu'il possède constitue une donnée personnelle, car il est possible d'identifier ce joueur à travers ces informations.
-
 ## 3. Qu'est-ce qu'un traitement de données ?
 
 Le traitement de données à caractère personnel désigne toute opération réalisée sur des données personnelles, qu'il s'agisse de leur collecte, modification, stockage, ou encore transmission.
@@ -45,9 +42,6 @@ Le traitement de données à caractère personnel désigne toute opération réa
 
 **Exemple concret :**  
 Un fichier contenant les informations d'un client, telles que son prénom, son adresse email, et ses préférences de Pokémon, et utilisé pour lui envoyer des offres personnalisées, constitue un traitement de données à caractère personnel.
-
-### Lien vers un exemple de gestion des traitements dans le cadre de la vente de cartes Pokémon :
-Un système permettant de suivre les transactions de vente et d'acheter des cartes Pokémon à des clients nécessite la gestion de données personnelles pour effectuer des suivis et des facturations.
 
 ## 4. Les responsabilités dans le RGPD
 
