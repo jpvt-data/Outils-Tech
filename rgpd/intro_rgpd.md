@@ -1,8 +1,10 @@
 [⬅ Page Précédente](./README.md)
 
-# Fiche technique - Introduction au RGPD (Règlement Général sur la Protection des Données)
+# Introduction au RGPD
 
-Le RGPD (Règlement Général sur la Protection des Données) est un cadre juridique européen mis en place en 2018 pour encadrer et protéger les données personnelles des individus. Il vise à garantir une utilisation éthique des informations personnelles dans un environnement de plus en plus numérique. Ce règlement touche tous les secteurs d'activité, et comprendre son fonctionnement est essentiel pour tout professionnel travaillant dans le domaine de la Data, qu'il s'agisse d'un Data Analyst, Data Scientist ou tout autre rôle en lien avec les données.
+Le **RGPD (Règlement Général sur la Protection des Données)** est un cadre juridique européen mis en place en 2018 pour encadrer et protéger les données personnelles des individus.
+
+Il vise à garantir une utilisation éthique des informations personnelles dans un environnement de plus en plus numérique. Ce règlement touche tous les secteurs d'activité, et comprendre son fonctionnement est essentiel pour tout professionnel travaillant dans le domaine de la Data, qu'il s'agisse d'un Data Analyst, Data Scientist ou tout autre rôle en lien avec les données.
 
 ## 1. Qu'est-ce que le RGPD ?
 
@@ -82,6 +84,8 @@ Le RGPD est un cadre essentiel pour assurer la sécurité et la confidentialité
 
 - [Le MOOC de la CNIL sur le RGPD](https://cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie)
 - [Guide pratique sur le RGPD par la CNIL](https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on)
+
+[⬅ Page Précédente](./README.md)
 
 ---
 
