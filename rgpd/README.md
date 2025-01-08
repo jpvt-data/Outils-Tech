@@ -1,3 +1,5 @@
+[⬅ Retour à Outils-Tech](../README.md)
+
 # RGPD et Conformité
 
 Ce dossier **"RGPD et Conformité"** regroupe des fiches techniques détaillées pour comprendre et appliquer les principes du Règlement Général sur la Protection des Données (RGPD). Il est destiné à fournir des bases solides pour tous ceux qui traitent des données personnelles dans un cadre professionnel, tout en respectant les obligations légales.
@@ -26,10 +28,8 @@ Ce dossier **"RGPD et Conformité"** regroupe des fiches techniques détaillées
 - Exemples d'application : gestion des données clients, fichiers marketing, collecte en ligne.
 - Études de cas concrets pour clarifier les concepts.
 
-## Ressources complémentaires
+## Ressource complémentaire
 - **[CNIL - Comprendre le RGPD](https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on)**
-- MOOC gratuit de la CNIL : formation structurée sur les concepts et principes clés du RGPD.
-- Articles et guides pratiques pour renforcer la compréhension.
 
 ## Objectif
 L'objectif de ce dossier est de permettre une adoption pratique et efficace du RGPD à travers des exemples concrets, des explications claires et des outils adaptés. Il s'adresse autant aux débutants qu'aux professionnels souhaitant approfondir leurs connaissances en conformité.
@@ -37,4 +37,6 @@ L'objectif de ce dossier est de permettre une adoption pratique et efficace du R
 ---
 
 🌍 **Protéger les données, c'est garantir la confiance et l'éthique dans un monde numérique.** 🔐
+
+[⬅ Retour à Outils-Tech](../README.md)
 
