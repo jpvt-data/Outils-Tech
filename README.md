@@ -18,7 +18,8 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 - **[Machine Learning](./data_tools/machine_learning/README.md)** 🤖 : Régression, classification, clustering, etc.
 - **Data Visualization** 📊 : Power BI, Matplotlib, Seaborn. 
 - **[Développement Web](./data_tools/web_development/README.md)** 🌍 : HTML, CSS, Streamlit, Web Scraping et création de sites web interactifs.
-- **[RGPD & Conformité](./data_tools/rgpd/intro_rgpd.md)** 📜 : Principes fondamentaux, obligations légales et bonnes pratiques pour le traitement des données personnelles 
+- **[RGPD & Conformité](./data_tools/rgpd/intro_rgpd.md)** 📜 : Principes fondamentaux, obligations légales et bonnes pratiques pour le traitement des données personnelles.
+- **[Gestion de Projet Data / Github](./data_tools/projet/gestion_projet_data.md)** : Méthodologie pour construire un projet Data via Github.
 
 Les fiches sont organisées par thème pour une navigation facile. Vous pouvez consulter les fichiers `.md` pour chaque sujet 💡.
 
