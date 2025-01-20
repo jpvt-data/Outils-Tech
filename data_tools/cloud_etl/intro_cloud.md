@@ -1,7 +1,5 @@
 # **Introduction au Cloud Computing**  
 
----
-
 # Sommaire
 
 1. [Aperçu Général du Cloud](#aperçu-général-du-cloud)  
