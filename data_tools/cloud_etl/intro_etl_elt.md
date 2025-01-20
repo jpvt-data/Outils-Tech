@@ -146,5 +146,4 @@ Dans cet exemple fictif, on :
 
 ---
 
-**En conclusion**, la mise en place d’un data warehouse et l’utilisation d’un processus ETL/ELT constituent des étapes essentielles pour exploiter efficacement des données riches et variées (comme celles de l’univers Pokémon). Grâce à ces approches, il devient plus aisé d’obtenir des analyses fiables et de soutenir des décisions éclairées, qu’il s’agisse de stratégies de compétition, de compréhension de l’évolution des Pokémon, ou encore de projets d’analyse prédictive plus avancés.
-```
+**En conclusion**, la mise en place d’un data warehouse et l’utilisation d’un processus ETL/ELT constituent des étapes essentielles pour exploiter efficacement des données riches et variées (comme celles de l’univers Pokémon). Grâce à ces approches, il devient plus aisé d’obtenir des analyses fiables et de soutenir des décisions éclairées ou encore de projets d’analyse prédictive plus avancés.
