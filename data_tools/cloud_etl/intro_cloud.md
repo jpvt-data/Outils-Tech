@@ -43,7 +43,7 @@ Cette externalisation autorise un gain de temps, de coûts et de flexibilité :
 **Pourquoi la virtualisation ?**  
 - Permettre l’exécution de plusieurs systèmes d’exploitation (Windows, Linux, etc.) sur un unique serveur physique  
 - Favoriser l’optimisation des ressources matérielles  
-- Simplifier la gestion et la maintenance des infrastructures  
+- Simplifier la gestion et la maintenance des infrastructures
 
 **Hyperviseur :**  
 
