@@ -1,6 +1,11 @@
 # **Introduction au Cloud Computing**  
 
-# Sommaire
+## Objectif  
+- Appréhender les bases du Cloud Computing  
+- Mettre en évidence les avantages en termes de flexibilité et de coûts  
+- Poser les jalons pour approfondir les services et modèles de déploiement
+  
+## Sommaire
 
 1. [Aperçu Général du Cloud](#aperçu-général-du-cloud)  
 2. [Virtualisation et Conteneurisation](#virtualisation-et-conteneurisation)  
@@ -12,13 +17,9 @@
 
 ## Aperçu Général du Cloud
 
-**Objectif :**  
-- Appréhender les bases du Cloud Computing  
-- Mettre en évidence les avantages en termes de flexibilité et de coûts  
-- Poser les jalons pour approfondir les services et modèles de déploiement  
+Le Cloud Computing représente une approche moderne de la gestion et de l’exploitation des ressources informatiques. Plutôt que d’acquérir et d’entretenir une infrastructure physique (serveurs, baies de stockage, etc.), l’idée est de louer des ressources à la demande auprès de fournisseurs spécialisés (ex. : AWS, Azure, OVH, IBM Cloud, etc.).  
 
-**Description :**  
-Le Cloud Computing représente une approche moderne de la gestion et de l’exploitation des ressources informatiques. Plutôt que d’acquérir et d’entretenir une infrastructure physique (serveurs, baies de stockage, etc.), l’idée est de louer des ressources à la demande auprès de fournisseurs spécialisés (ex. : AWS, Azure, OVH, IBM Cloud, etc.). Cette externalisation autorise un gain de temps, de coûts et de flexibilité :  
+Cette externalisation autorise un gain de temps, de coûts et de flexibilité :  
 - **Accès rapide** à la puissance de calcul et au stockage  
 - **Paiement à l’usage** plutôt qu’un investissement lourd en amont  
 - **Mises à jour automatiques** et maintenance simplifiée  
@@ -45,11 +46,13 @@ Le Cloud Computing représente une approche moderne de la gestion et de l’expl
 - Simplifier la gestion et la maintenance des infrastructures  
 
 **Hyperviseur :**  
+
 Jouer le rôle d’orchestrateur entre la machine hôte (serveur physique) et les machines virtuelles.  
 - **Hyperviseur de type 1 (bare-metal)** : installé directement sur le matériel (ex. : VMware ESXi).  
 - **Hyperviseur de type 2 (hosted)** : installé au-dessus d’un système d’exploitation (ex. : VirtualBox).  
 
 **Conteneurisation :**  
+
 Offrir une isolation applicative plus légère et plus rapide à mettre en place qu’une machine virtuelle complète. Les conteneurs partagent le noyau du système d’exploitation, tout en maintenant des environnements cloisonnés pour chaque application.  
 - **Exemple :** Docker, qui facilite la création d’images reproductibles et transportables d’une application ou d’un service.  
 
@@ -60,6 +63,7 @@ Offrir une isolation applicative plus légère et plus rapide à mettre en place
 ### IaaS (Infrastructure as a Service)
 
 **Définition :**  
+
 Proposer un accès à la demande à des composants d’infrastructure (serveurs virtuels, stockage, réseaux). L’IaaS se rapproche le plus de l’environnement « on-premise » traditionnel, en confiant la gestion matérielle au fournisseur Cloud.
 
 **Exemples :**  
@@ -76,6 +80,7 @@ Proposer un accès à la demande à des composants d’infrastructure (serveurs 
 ### PaaS (Platform as a Service)
 
 **Définition :**  
+
 Fournir un environnement complet pour développer, tester et déployer des applications sans gérer soi-même l’infrastructure sous-jacente.  
 - Mettre à disposition des bibliothèques, bases de données, serveurs web, systèmes d’intégration continue.  
 - Simplifier la configuration et la maintenance.  
@@ -93,6 +98,7 @@ Fournir un environnement complet pour développer, tester et déployer des appli
 ### SaaS (Software as a Service)
 
 **Définition :**  
+
 Proposer des applications utilisables directement en ligne (suite bureautique, messagerie, CRM, outils de visioconférence), gérées entièrement par le fournisseur (infrastructure + mises à jour + maintenance).  
 
 **Exemples :**  
@@ -109,6 +115,7 @@ Proposer des applications utilisables directement en ligne (suite bureautique, m
 ## Modèles de Déploiement
 
 **Pourquoi distinguer plusieurs modèles ?**  
+
 La sensibilité des données, la conformité réglementaire et la capacité de personnalisation influencent le choix entre différents types de clouds.  
 
 | Type de Cloud    | Description                                                  | Avantages Clés                               |
