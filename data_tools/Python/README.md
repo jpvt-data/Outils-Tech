@@ -25,6 +25,7 @@ Ces fiches sont des références pratiques sur les bibliothèques, les fonctionn
 ### 2. Manipulation de données
 - [Introduction à Pandas](./data/pandas_cheat_sheet.md)
 - [Utilisation de NumPy](./data/numpy_cheat_sheet.md)
+- [SQLAlchemy](./data/sqlalchemy.md)
 
 ### 3. Traitement des chaînes de caractères
 - [Regex - Expressions régulières](./data/regex_expressions_regulieres.md)
