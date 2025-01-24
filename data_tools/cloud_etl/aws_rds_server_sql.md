@@ -22,24 +22,16 @@ AWS RDS (Relational Database Service) permet de déployer facilement une base de
    - Connectez-vous à la console AWS.
    - Naviguez vers le service **RDS**.
 
-   ![Capture d'écran](./images/extracted_image_1.png)
-
 2. **Créer une base de données** :
    - Cliquez sur **Créer une base de données**.
    - Sélectionnez le moteur **MySQL** (compatible avec l'offre gratuite).
 
-   ![Capture d'écran](./images/extracted_image_2.png)
-
 3. **Choisir les options de l'offre gratuite** :
    - Laissez les options par défaut et vérifiez que l'offre gratuite est activée.
-
-   ![Capture d'écran](./images/extracted_image_3.png)
 
 4. **Configurer les identifiants** :
    - Donnez un nom à votre base de données.
    - Définissez un utilisateur principal et un mot de passe sécurisé.
-
-   ![Capture d'écran](./images/extracted_image_4.png)
 
 ---
 
@@ -50,19 +42,13 @@ AWS RDS (Relational Database Service) permet de déployer facilement une base de
    - Créez un nouveau **VPC** (Virtual Private Cloud).
    - Configurez un **groupe de sécurité** personnalisé pour autoriser les connexions.
 
-   ![Capture d'écran](./images/extracted_image_5.png)
-
 2. **Paramètres d'accès** :
    - Configurez l'accès public si vous souhaitez vous connecter depuis l'extérieur.
    - Désactivez l'option "connecter à EC2" pour cette étape (sauf si nécessaire).
 
-   ![Capture d'écran](./images/extracted_image_6.png)
-
 3. **Validation et création** :
    - Confirmez les paramètres et lancez la création de la base de données.
    - Patientez jusqu'à ce que la base soit prête (statut visible dans la console).
-
-   ![Capture d'écran](./images/extracted_image_7.png)
 
 ---
 
@@ -74,18 +60,12 @@ AWS RDS (Relational Database Service) permet de déployer facilement une base de
      - L'utilisateur principal
      - Le mot de passe (défini lors de la création)
 
-   ![Capture d'écran](./images/extracted_image_8.png)
-
 2. **Utiliser un outil de connexion** :
    - Exemple : **MySQL Workbench** ou tout autre client MySQL.
    - Entrez les informations de connexion pour accéder à la base.
 
-   ![Capture d'écran](./images/extracted_image_9.png)
-
 3. **Charger des données** :
    - Importez un fichier CSV (comme `bd.csv`) pour créer ou remplir une table SQL sur le serveur MySQL RDS.
-
-   ![Capture d'écran](./images/extracted_image_10.png)
 
 ---
 
