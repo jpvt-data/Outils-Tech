@@ -21,7 +21,7 @@ Ce dépôt est en cours d'amélioration et sera régulièrement mis à jour.
 - **[RGPD & Conformité](./data_tools/rgpd/intro_rgpd.md)** 📜 : Principes fondamentaux, obligations légales et bonnes pratiques pour le traitement des données personnelles.
 - **[Cloud & ETL](./data_tools/cloud_etl/README.md) ☁️** : Pilotage des ressources informatiques en mode Cloud et optimisation des flux de données via ETL.
 - **[Gestion de Projet Data / Github](./data_tools/projet/gestion_projet_data.md)** : Méthodologie pour construire un projet Data via Github.
-- **[IA Générative](./data_tools/IA/intro_IA.md)** : Introduction à l'IA Générative, Compréhension et premiers pas.
+- **[IA Générative](./data_tools/IA/intro_IA.md)** : Introduction, Compréhension et premiers pas.
 
 Les fiches sont organisées par thème pour une navigation facile. Vous pouvez consulter les fichiers `.md` pour chaque sujet 💡.
 
