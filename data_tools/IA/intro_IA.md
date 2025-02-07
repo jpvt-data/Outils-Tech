@@ -144,5 +144,7 @@ Bonne approche :
 
 ## Conclusion
 
-L'IA générative est un outil puissant, mais elle doit être utilisée intelligemment. **Comprendre son fonctionnement et ses limites est essentiel** pour en tirer le meilleur parti sans tomber dans ses pièges.
+L'IA générative est un outil puissant, mais elle doit être utilisée intelligemment. **Comprendre son fonctionnement et ses limites est essentiel** pour en tirer le meilleur parti sans tomber dans ses pièges. 
+
+Voici l'emplacement d'un autre tuto : **[Créer un Chatbot avec Gemini](llm_chatbot.md)**
 
